@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxima - The Rebirth Of RTS</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #121212;
+            --surface-color: #1e1e1e;
+            --text-color: #e0e0e0;
+            --accent-color: #6fa8dc;
+            --header-bg: #226e93;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(rgba(34, 110, 147, 0.8), rgba(33, 33, 33, 0.9)), url('https://lh3.googleusercontent.com/sitesv/AG8ngQW_idOYwOv6qXGan7gwJj0BjcVeHI3O2AawOVoPJNZc6UeXjNJiWXvZXetLTywHWq5DY_ePwRuCBou4diH3d4li5a2W-utEhPEf-6idKCt8wYhi5cSeTxzlFSz2AJZBd559r3kEdlo8bOiNzOEo5pZKBMSgEvg-vfmP2WxYYbtM8S7jDfZQHQSOAdm3H3o=w16383') no-repeat center center/cover;
+            color: #ffffff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        nav {
+            background-color: var(--surface-color);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 400;
+        }
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        section {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2.2rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            margin-top: 30px;
+        }
+        p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 20px auto;
+            color: #cccccc;
+        }
+        .feature-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        .toc {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 30px 0;
+        }
+        .toc a {
+            background-color: var(--surface-color);
+            color: var(--accent-color);
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            border: 1px solid #333;
+        }
+        .toc a:hover {
+            background-color: var(--accent-color);
+            color: #121212;
+        }
+        footer {
+            background-color: var(--surface-color);
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #333;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .social-icons img {
+            width: 32px;
+            height: 32px;
+            filter: invert(1);
+        }
+        .social-icons img:hover {
+            opacity: 0.7;
+        }
+        .disclaimer {
+            font-size: 0.8rem;
+            color: #777;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="https://github.com/bluespacecatno2" target="_blank">GitHub</a>
+    </nav>
+
+    <header id="home">
+        <h1>Proxima Studios</h1>
+    </header>
+
+    <div class="container">
+        
+        <!-- Table of Contents / Quick Links -->
+        <section>
+            <h2>The Rebirth Of RTS</h2>
+            <div class="toc">
+                <a href="#units">Massive Unit Counts</a>
+                <a href="#performance">High Performance</a>
+                <a href="#optimization">Optimization</a>
+                <a href="#assets">0 Purchased Assets</a>
+                <a href="#ai">No AI Used</a>
+                <a href="#story">Immersive Storyline</a>
+                <a href="#godot">Godot 4</a>
+                <a href="#maps">F*cking Small Maps</a>
+                <a href="#security">Network Security</a>
+                <a href="#control">Professional Control</a>
+                <a href="#rendering">Real-Time Map Rendering</a>
+                <a href="#api">API Support</a>
+                <a href="#offline">Offline-First</a>
+            </div>
+        </section>
+
+        <!-- Feature 1 -->
+        <section id="units">
+            <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQVq2E9nxw4eLQoMtOt-d4qzU8LR5ykd-ytOsFf2ewBjz4mnKzqpn8EoWn9XqIJuxOvrtXljF9sZPxJQJR24zqsKA8b42ZIZX1QERO_N0yB1JybokwGS7-P2qqReh40ELl_wBNMPqhu1HgO9D-Bu7Kkezuit0Hf-ORhjZRP8XxcL4ERToyNgVD2DwbUx65fjD9mDhN6N-gew_9oEiG2M_OMfBeoJzw4NLs4m3a96nS0=w1280" class="feature-img" alt="Massive unit counts">
+            <h3>Massive unit counts</h3>
+            <p>Proxima will support 800 supply max by standard, allowing massive and intense firefights.</p>
+        </section>
+
+        <!-- Feature 2 -->
+        <section id="performance">
+            <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQU9AY4dg60lrCSwBv7UneKPPutWddtChV-llrb5QMTkL2S86LfzF_pzSjRhaWMI_0hKkOY79rcoa16KKis7WUMpZjZhi6ybYTWHcEcyFtqPqsposCIscSpLEvOsxWmr3gTXZzOE9Dvq2WjR3Dit9HWWN_21Oc0C2Wu-ykESJ8M8ylTmaokBhv5qrL7427aJOMmD3H-CDo9Gre1ccjlElLxBTvSkz57CFdE37Xxh=w1280" class="feature-img" alt="High Performance">
+            <h3>High Performance</h3>
+            <p>Proxima has been built on the Godot 4 engine using revolutionary new techniques for path-finding AI, rendering, and dynamic environmental interaction.</p>
+        </section>
+
+        <!-- Feature 3 -->
+        <section id="optimization">
+            <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQX1HsBDG4ocbQ3R-m0EV8TZjmSNM-rGOvzkmkrcixaht91jnHmooyL3ARo8xH_XlOWS_85_Yl0Y2xv1GzaiYQRUc1qHhcx2ncpw0C-rAuzjGyTQtB9KkUcemu-qTtrQtd39sXMtDxU953TZgmtGpX44XuYtQXsLc-bHVz9Z7XbFShPknewSRoE2Gx4Gw7F_5ovrBEBzrTlEaqBIBkQa7t9D90zHA5wHmyblhgkA=w1280" class="feature-img" alt="Optimization">
+            <h3>Optimization</h3>
+            <p>Proxima is well optimized, supporting most legacy and modern hardware.</p>
+        </section>
+
+        <!-- Feature 4 -->
+        <section id="assets">
+            <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQW2R3nbnq2OIS9mrLNpzz5hOz0zZj8rcIpl4IBa2oOtsJD9w55hUXwhVMvmWNXEHb6OxuCKfsUNoj8q2-VFqImrCaRf2K8mLAX-c6PRLCGClEa2k0_subGNXODQ-AD3cT4ECkVdY2VXbQzWAB87z4rr4gDj2XT-WrHXYs27MvUfhfJGarO-KHw_UuoHyS3Hxe0_j7ufcmO44Ig8MlqYNDs1DfnUBYgNsPJUf5VA=w1280" class="feature-img" alt="0 Purchased Assets">
+            <h3>0 Purchased Assets</h3>
+            <p>At Proxima Studios we soundly believe in maintaining our visual and stylistic integrity, so we will be making all assets in-house.</p>
+        </section>
+
+        <!-- Feature 5 -->
+        <section id="ai">
+            <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQWz-F7ggbp94ttwoSOjzc8juauuu28ah34DSIL1jfywp1o8M2GvSSl3gRfxHghV0PMFduA1VKJ6xa4lPcWycx3RuOBtMryS9Fdcb_DZwwrlg1Tqb4PHV623Gj8d8hSlF1h4Ev18R-0wFnssYKTIYMi90i4gAPCBmtUkdtsMgIwHk9LhyuuOCJkit5vEQwOm1XUt5XzO4kT9Ryx3-O4iq43vRtbcuWSvtILu7uc-TGY=w1280" class="feature-img" alt="No AI used">
+            <h3>No AI used</h3>
+            <p>At Proxima Studios we also believe that developing "in-house" means we will not, and can not use Artificial Intelligence (AI) for development.</p>
+        </section>
+
+        <!-- Feature 6 -->
+        <section id="story">
+            <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQWYofLFYObqUNG4J78rEQmng166inyuUm9-gfsWWfA1KJKVyYouW2gB73Qa3OQ_Hcsr26eWy8xytFEG7Dj380jgDBSx9hJClTOOoZiK2WKNWwcUU8L6pLoltUpbCTF0lkl5sfxKWM4VTJtWpZqkLjeD6an2jHDGhjYKDF8kl3oR_ma4QDH8oCeExLiT8UQA5wLBDXWHEVf8zBN-aoCfE1nJfeUsAe-dXV2FN_IJ9Ns=w1280" class="feature-img" alt="Immersive Storyline">
+            <h3>Immersive Storyline</h3>
+            <p>The Proxima universe features a unique and never-before-seen universe focusing on Politics, Resource Scarcity, and Disease.</p>
+        </section>
+
+        <!-- Feature 7 -->
+        <section id="godot">
+            <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQWgu3Ylu8jqHuoBuMxCLs5mhKK9GI5AWhZWxIaD2pDY3_RGKGnk3L54_bO8hJzBZDzHjtI6QSLe7K-qWza7vXzvl5iANN7W3s7S_XI_o5UJFoVOj536NGnTg5Qy4MxeY-XvFKQ0-tf89Tm5y3kdvgASYAtG1eiCLarYBoYr4bPrT4gaUXyJ8ESTFNGVZWbGVL7tGSYmqX9wsdVY-uCYQkAlggMFImi8BaDgsj--_j8=w1280" class="feature-img" alt="Godot 4">
+            <h3>Godot 4</h3>
+            <p>Proxima has been custom built from the ground up off of the revolutionary Godot 4 framework. Proxima has had (almost) its entirety of its systems written in C#. Proxima uses several other technologies for its systems including (but not limited to): JSON for maps, XML for unit charts, PNG's for UI elements, .blend and blender for 3D models.</p>
+        </section>
+
+        <!-- Feature 8 -->
+        <section id="maps">
+            <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQUyUOom0G_Q-ER_EYvRR5T2ntkF8PjVdgDqHmcbaGtuE4OQsGgJ46JCmPDQfvgwSvfcNicX737cWYGbMS0989IOI-P5U6OsbLljZm2Lyt12WPnq38I-_epxRM9uMLmMH76rHiNehjeD0e94wogFdVwHVU3UhP3J9bqUHzt3BbBRY0MTcjxLl8AtBVNQQDUIbm450v24EuCJ69OQXyqmGgA7LFSaW6cyTeXmmvQhKns=w1280" class="feature-img" alt="F*cking Small Maps">
+            <h3>F*cking Small Maps</h3>
+            <p>Proxima stores map data as a JSON file that stores properties and status for tiles, instead of far more complex and bulky pre-compiled maps.</p>
+        </section>
+
+        <!-- Feature 9 -->
+        <section id="security">
+            <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQWulIIa4YjRLvsRrycD203x49pFo-wIDtc2bBdUzFakzQkHw5V7f6AsFUGCv3HsuTLOtuAV4G9173PV1-hknS_vsKfuO2NfL4nrczkbRmmw7mqLCWquX1j8Qe1Srs7PBrkSXIozl6MwWFgR04EactmQtJNTW2z2ZjdCYgtnVb7B7S3F8kQfLuBDkVszKHS5KV9kRfoW-8XGt9-E_5rBIakc3xzhhZHxYl6hwnDe4so=w1280" class="feature-img" alt="Groundbreaking Network Security">
+            <h3>Groundbreaking Network Security</h3>
+            <p>Proxima will use a combination of active and passive security measures to prevent bad actors from compromising a game or client including hash-based game verification, 3rd party server handshaking, and constant sync verification.</p>
+        </section>
+
+        <!-- Feature 10 -->
+        <section id="control">
+            <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQXz_i78CLu0mKFGcF05pD6npBlZMKqcsrBsBzLN-vwZT7EedVuJ7AKImOjCkPhzttz3mtdCOzW6TpEuv9U1tjhlGW1SP5lw03e9vihRSIltWdYP4F5k24j829yo4CQbmVEaNlFUm23m2YeryZ3GW1YpaNGvfpemKJMuAspOSZqCmDMWiaX8Jti-WrJt2d63HEIv8Iomj--UVmp40NNYJzKAgpyYaLYcPUvmK7Vj15U=w1280" class="feature-img" alt="Control Flexibility">
+            <h3>Control Flexibility</h3>
+            <p>Proxima uses a seamless, and familiar Navigation system, featuring WASD+QE, arrow key, scroll zoom, and side scrolling. It supports moving and angling the camera to anywhere on the battlefield.</p>
+        </section>
+
+        <!-- Feature 11 -->
+        <section id="rendering">
+            <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQWB_Hrxxgz-bPBYW53wnKuuC3jY9ttaGBI8PLAfrXuXM7ObKfIrXCYtdKwwqtVX8QNpzVygyDWWysNotJz7E9b4FZiLlwbfzSkDxkQaDUKXWOJvsG76EEb_LP9iB99FKMQgqdhVI8WEtsE47XBwIXySOHXCjMRUieCcTB0Aaoy-dp7cR3MYnqXkN2sD4N2CKCw1KW9vwzCxSSjhe5r9TMr3vfW8flAdujpHEaaJbnY=w1280" class="feature-img" alt="Real-Time Map Rendering">
+            <h3>Real-Time Map Rendering</h3>
+            <p>The minimap renders its content real time based on units and terrain, allowing never-before-seen features such as:</p>
+            <p style="text-align: left; max-width: 500px; margin: 0 auto;">
+                1: On-The-Fly terrain changes<br>
+                2: Faster load times<br>
+                3: Player-Created map caustics & terrain.<br>
+                4: Tempor-Permanent texture changes (e.g. craters, dunes)
+            </p>
+        </section>
+
+        <!-- Feature 12 -->
+        <section id="api">
+            <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQVaeLGNMV1KPZ0u6mxjOdTstnjXAgXqEN8IsWupPTk-xU65xha79yZ659icIJ0ETG89PZaJv6YhPSiZXcJwcxRZ1mGS24P1DQSQeg4sMAEV7P0xthnDleqCLPEC9IhXDouHoENA4WBi8L3IUEh3TtfS6Irlg0vCkemom4JJJ8MV9NMB7kyYLcTgjMbuvVGlUGXRhZnUFDL34G_HuZpbKvCM5qg-TUpSro9uIzZzB-8=w1280" class="feature-img" alt="API Support">
+            <h3>API Support</h3>
+            <p>Proxima (at release) will have a modding API, allowing developers to easily develop, and test mods in game. Developers can request documentation for personal use.*</p>
+            <p class="disclaimer">*Documents provided are for personal or small team modding use only, monetizing parts of the game, engine, or modding system is forbidden.</p>
+        </section>
+
+        <!-- Feature 13 -->
+        <section id="offline">
+            <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQWXXVuQ4oGO3JF1c0z7jYhc6nOHjSWpg8htm55p-Zzo5cJVEyA4cbTprDlnq5R1CtSTzOsaut0zb68rb161JGQoI3HbUNv3m0qEfakwsvu8teLXeKuz34gqL838b95Z-57X2vw6bkRhFJTMSlR4Et4rgyV-aBCifn9GAUT_FXS11uTGMDmMU6z2W_NKzkshIL6PDSmMAAwhzKrNNCjVUHMk8N87bvHjQThW0RZH=w1280" class="feature-img" alt="Internet, What Internet?">
+            <h3>Internet, What Internet?</h3>
+            <p>Proxima will be one of few modern releases to be an offline-first game. Requiring no internet to launch! This means no telemetry, no data collection, and no profiling.*</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <small>Got questions or feedback? We’d love to hear from you!</small>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61593989053479#" target="_blank"><img src="https://lh3.googleusercontent.com/sitesv/AG8ngQXICn0l4R9nCSr21sGT8OIu1ZMq6zqKntBGTstfcsVthcHO9f67cKDKrDuIQNBvqCwtt26rnwNyN8RZ45q8Hw7T1z2qpkoMiqqC6NwGd3GMSQMa5qTJ0NsOfJYqTEZ30vwYYtvOMdkAYmIJcaDglMAqhaDP9caS0JFlP9FugEjB5tDJYB0PKIsbnsxYDZnyuqI_fqgbLRd-CvQE_BSx" alt="Facebook"></a>
+            <a href="https://www.youtube.com/@ProximaGameStudios" target="_blank"><img src="https://lh3.googleusercontent.com/sitesv/AG8ngQVQtNQ9IG5CPM13p-G767jE9sAwpJvkOwbnvOBzA13MQPb_4RpEu2WNLT3FWMy23G1JyGGyjmdaR37eopokdzEczB22QhlGNl-p3qtCPW9eC0gmMCh7R0zscSf4EnqzKYsWnCblzHuB0PXDm0zKEBPEsQ-GRCPQ9sHqMuJIW1MUUfmemKB8RkDGu0iecz5_pv-hupimdPIPctLxNg" alt="YouTube"></a>
+            <a href="mailto:proximastudios@hotmail.com" target="_blank"><img src="https://lh3.googleusercontent.com/sitesv/AG8ngQVmdqR0jahdnIv5A4096J--LfOlo4gheG1baFQKMIZTwMyNQXJYHHrEOLTAhrXUefHSA-25ZkfeRAGJWHj4LpL41cXvSx2krhJUgZfytm1C88O0Zi-EsV0laJXmlMXom1RneJDvp36KlcQlVqJ93BsFd42jPI9dOkf-_fy7HrE6Rk7EbcOKfs0JZY9V8LNCulGkUy3GX-HRLT4" alt="Email"></a>
+            <a href="https://discord.gg/VjfKXrjQrx" target="_blank"><img src="https://lh3.googleusercontent.com/sitesv/AG8ngQXQvrjcgPAzU78CoNRNi2XPYI-9UGM3LnyOo49XM-FP6lSG4risEk1qtcqOgHOS7eVmlD0tr6xlzq-PhzEJK-ItHirK60-Vgap4EYkYfnq1kWmf18dlIk57fgZFkpSjjG-qa7AuwVfwnDGc5DdQCFAFtWmeplrTl6iIsUvF8lyvk7MHyJbE_61KhC6-9MOjkFaVoX1hiA7Y2E42Tw" alt="Discord"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
