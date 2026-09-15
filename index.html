@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxima - Master Database</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+        :root {
+            --bg-body: #f8f9fa;
+            --bg-header: #ffffff;
+            --bg-panel: #ffffff;
+            --bg-panel-alt: #fcfdfe;
+            --border-color: #e0e0e0;
+            --text-main: #202124;
+            --text-muted: #5f6368;
+            --bg-card: #ffffff;
+            --border-card: #dadce0;
+            --shadow-card: rgba(60,64,67,0.1);
+            --accent-primary: #1a73e8;
+            --accent-hover: #f1f3f4;
+            --accent-border: #1a73e8;
+            --bg-pill-active: #1a73e8;
+            --text-pill-active: #ffffff;
+            --bg-pill-inactive: #f1f3f4;
+            --text-pill-inactive: #5f6368;
+            --bg-quote: #f8f9fa;
+            --border-quote: #1a73e8;
+            --text-quote: #3c4043;
+        }
+
+        [data-theme="dark"] {
+            --bg-body: #0e0f12;
+            --bg-header: #16171b;
+            --bg-panel: #16171b;
+            --bg-panel-alt: #121316;
+            --border-color: #2a2c33;
+            --text-main: #e8eaed;
+            --text-muted: #9aa0a6;
+            --bg-card: #1f2128;
+            --border-card: #3c4043;
+            --shadow-card: rgba(0,0,0,0.4);
+            --accent-primary: #8ab4f8;
+            --accent-hover: #2d3039;
+            --accent-border: #8ab4f8;
+            --bg-pill-active: #8ab4f8;
+            --text-pill-active: #121214;
+            --bg-pill-inactive: #2d3039;
+            --text-pill-inactive: #9aa0a6;
+            --bg-quote: #252830;
+            --border-quote: #8ab4f8;
+            --text-quote: #e0e0e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            transition: background-color 0.2s, border-color 0.2s, color 0.15s;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: var(--bg-header);
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+            flex-shrink: 0;
+        }
+
+        .header-title-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .notebook-icon {
+            width: 28px;
+            height: 28px;
+            background-color: var(--accent-border);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #121214;
+            font-weight: 800;
+            font-size: 14px;
+        }
+
+        [data-theme="dark"] .notebook-icon {
+            color: #121214;
+        }
+
+        .header-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-main);
+            letter-spacing: -0.5px;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .theme-toggle-btn {
+            background-color: var(--bg-pill-inactive);
+            color: var(--text-pill-inactive);
+            border: 1px solid var(--border-card);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .theme-toggle-btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .workspace {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+            height: calc(100vh - 64px);
+        }
+
+        .panel-left {
+            width: 32%;
+            background-color: var(--bg-panel);
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .panel-header {
+            padding: 16px;
+            border-bottom: 1px solid var(--border-color);
+            background-color: var(--bg-panel);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .panel-title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 0.8px;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 9px 12px;
+            border: 1px solid var(--border-card);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            border-radius: 8px;
+            font-size: 13.5px;
+            outline: none;
+        }
+
+        .search-bar:focus {
+            border-color: var(--accent-border);
+        }
+
+        .sort-controls {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .sort-dropdown {
+            width: 100%;
+            padding: 6px 10px;
+            font-size: 11.5px;
+            font-weight: 600;
+            background-color: var(--bg-pill-inactive);
+            color: var(--text-pill-inactive);
+            border: 1px solid var(--border-card);
+            border-radius: 6px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .filter-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            max-height: 72px;
+            overflow-y: auto;
+            padding-right: 4px;
+        }
+
+        .filter-pill {
+            padding: 4px 8px;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: 600;
+            background-color: var(--bg-pill-inactive);
+            color: var(--text-pill-inactive);
+            border: none;
+            cursor: pointer;
+        }
+
+        .filter-pill.active {
+            background-color: var(--bg-pill-active);
+            color: var(--text-pill-active);
+        }
+
+        .list-scroll-area {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .unit-list {
+            list-style: none;
+        }
+
+        .category-header {
+            background-color: var(--bg-body);
+            padding: 6px 16px;
+            font-size: 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        .unit-item {
+            padding: 10px 16px;
+            border-bottom: 1px solid var(--border-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .unit-item:hover {
+            background-color: var(--bg-body);
+        }
+
+        .unit-item.active {
+            background-color: var(--accent-hover);
+            border-left: 4px solid var(--accent-border);
+            padding-left: 12px;
+        }
+
+        .unit-info-left {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .unit-item-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .unit-item-tag {
+            font-size: 8px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1px 5px;
+            border-radius: 4px;
+            width: fit-content;
+        }
+
+        /* Badges */
+        .tag-character { background-color: #e8f0fe; color: #1a73e8; }
+        .tag-syndicate { background-color: #e6f4ea; color: #137333; }
+        .tag-enclave { background-color: #fef7e0; color: #b06000; }
+        .tag-biomass { background-color: #fce4ec; color: #c2185b; }
+        .tag-material { background-color: #f1f3f4; color: #5f6368; }
+        .tag-company { background-color: #f3e8fd; color: #7b1fa2; }
+        .tag-event { background-color: #feebec; color: #d93025; }
+        .tag-structure { background-color: #e2f1f8; color: #01579b; }
+        .tag-weapon { background-color: #efebe9; color: #4e342e; }
+
+        .panel-center {
+            width: 33%;
+            background-color: var(--bg-panel);
+            border-right: 1px solid var(--border-color);
+            padding: 24px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .panel-right {
+            width: 35%;
+            background-color: var(--bg-panel-alt);
+            padding: 24px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 1px 2px 0 var(--shadow-card);
+        }
+
+        .section-title {
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 4px;
+        }
+
+        .stats-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .stat-pair {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 4px 0;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .stat-value {
+            font-size: 12px;
+            color: var(--text-main);
+            font-weight: 600;
+            text-align: right;
+            max-width: 65%;
+        }
+
+        .lore-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-main);
+            line-height: 1.3;
+        }
+
+        .lore-tagline {
+            font-size: 12px;
+            font-style: italic;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        .lore-text {
+            font-size: 13px;
+            line-height: 1.6;
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .lore-quote {
+            background-color: var(--bg-quote);
+            border-left: 4px solid var(--border-quote);
+            padding: 10px 14px;
+            font-size: 12px;
+            font-style: italic;
+            color: var(--text-quote);
+            border-radius: 0 8px 8px 0;
+            line-height: 1.5;
+        }
+
+        .wiki-link {
+            color: var(--accent-border);
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            border-bottom: 1px dashed var(--accent-border);
+        }
+
+        .wiki-link:hover {
+            border-bottom: 1px solid var(--accent-border);
+        }
+
+        .extras-box {
+            margin-top: 15px;
+            background-color: var(--bg-quote);
+            border: 1px dashed var(--border-quote);
+            border-radius: 8px;
+            padding: 12px;
+        }
+
+        .extras-btn {
+            background-color: var(--accent-primary);
+            color: #ffffff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .extras-content {
+            margin-top: 10px;
+            font-size: 11.5px;
+            line-height: 1.5;
+            color: var(--text-quote);
+            filter: blur(4px);
+            user-select: none;
+            transition: filter 0.3s ease;
+        }
+
+        .extras-content.unlocked {
+            filter: blur(0);
+            user-select: auto;
+        }
+
+        .placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: var(--text-muted);
+            text-align: center;
+            padding: 24px;
+        }
+
+        .placeholder-icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+            color: var(--border-card);
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-card);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-title-container">
+            <div class="notebook-icon">P</div>
+            <div class="header-title">Proxima</div>
+        </div>
+        <div class="header-right">
+            <button class="theme-toggle-btn" id="theme-toggle" onclick="toggleTheme()">
+                 Dark Mode
+            </button>
+        </div>
+    </header>
+
+    <div class="workspace">
+
+        <div class="panel-left">
+            <div class="panel-header">
+                <span class="panel-title">Index</span>
+                <input type="text" id="search-input" class="search-bar" placeholder="Search entries...">
+
+                <div class="sort-controls">
+                    <select id="sort-order" class="sort-dropdown" onchange="updateFilters()">
+                        <option value="asc">A to Z</option>
+                        <option value="desc">Z to A</option>
+                    </select>
+                    <select id="grouping-mode" class="sort-dropdown" onchange="updateFilters()">
+                        <option value="mixed">Mixed List</option>
+                        <option value="grouped">Grouped Category</option>
+                    </select>
+                </div>
+
+                <div class="filter-container" id="filter-pills">
+                    <button class="filter-pill active" data-filter="all" onclick="filterType('all')">All</button>
+                    <button class="filter-pill" data-filter="Character" onclick="filterType('Character')">Characters</button>
+                    <button class="filter-pill" data-filter="Syndicate Unit" onclick="filterType('Syndicate Unit')">Syndicate</button>
+                    <button class="filter-pill" data-filter="Enclave Unit" onclick="filterType('Enclave Unit')">Enclave</button>
+                    <button class="filter-pill" data-filter="Biomass Unit" onclick="filterType('Biomass Unit')">Biomass</button>
+                    <button class="filter-pill" data-filter="Major Event" onclick="filterType('Major Event')">Events</button>
+                    <button class="filter-pill" data-filter="Production Structure" onclick="filterType('Production Structure')">Structures</button>
+                    <button class="filter-pill" data-filter="Weapon" onclick="filterType('Weapon')">Weapons</button>
+                    <button class="filter-pill" data-filter="Material" onclick="filterType('Material')">Materials</button>
+                    <button class="filter-pill" data-filter="Pre-War Corporation" onclick="filterType('Pre-War Corporation')">Corps</button>
+                </div>
+            </div>
+            <div class="list-scroll-area">
+                <ul class="unit-list" id="entry-list"></ul>
+            </div>
+        </div>
+        <div class="panel-center" id="panel-stats">
+            <div class="placeholder">
+                <div class="placeholder-icon"></div>
+                <p>Select an item.</p>
+            </div>
+        </div>
+
+        <div class="panel-right" id="panel-lore">
+            <div class="placeholder">
+                <div class="placeholder-icon"></div>
+                <p>Info will display here.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+    <script>
+        let database = [];
+        const listContainer = document.getElementById("entry-list");
+        const statsPanel = document.getElementById("panel-stats");
+        const lorePanel = document.getElementById("panel-lore");
+        const searchInput = document.getElementById("search-input");
+        const sortOrderSelect = document.getElementById("sort-order");
+        const groupingModeSelect = document.getElementById("grouping-mode");
+
+        let currentTypeFilter = "all";
+        let searchQuery = "";
+
+        function initTheme() {
+            const savedTheme = localStorage.getItem("theme") || "light";
+            document.documentElement.setAttribute("data-theme", savedTheme);
+            const btn = document.getElementById("theme-toggle");
+            btn.innerHTML = savedTheme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode";
+        }
+
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute("data-theme");
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", newTheme);
+            localStorage.setItem("theme", newTheme);
+
+            const btn = document.getElementById("theme-toggle");
+            btn.innerHTML = newTheme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode";
+        }
+
+        function getChildText(parent, tag) {
+            const el = parent.getElementsByTagName(tag)[0];
+            return el ? el.textContent.trim() : "";
+        }
+
+        function loadDatabase() {
+            try {
+                if (typeof xmlDatabaseSource === 'undefined') {
+                    throw new Error("xmlDatabaseSource is not defined in index.js");
+                }
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(xmlDatabaseSource.trim(), "text/xml");
+
+                const parserError = xmlDoc.getElementsByTagName("parsererror");
+                if (parserError.length > 0) {
+                    throw new Error("XML parsing error encountered.");
+                }
+
+                const entries = xmlDoc.getElementsByTagName("entry");
+                const loadedData = [];
+
+                for (let i = 0; i < entries.length; i++) {
+                    const entryNode = entries[i];
+                    const id = entryNode.getAttribute("id");
+                    const name = getChildText(entryNode, "name");
+                    const type = getChildText(entryNode, "type");
+                    const category = getChildText(entryNode, "category");
+                    const tagClass = getChildText(entryNode, "tagClass");
+                    const quote = getChildText(entryNode, "quote");
+
+                    const stats = [];
+                    const statNodes = entryNode.getElementsByTagName("stat");
+                    for (let j = 0; j < statNodes.length; j++) {
+                        stats.push({
+                            label: statNodes[j].getAttribute("label"),
+                            value: statNodes[j].textContent.trim()
+                        });
+                    }
+
+                    const lore = [];
+                    const pNodes = entryNode.getElementsByTagName("p");
+                    for (let j = 0; j < pNodes.length; j++) {
+                        lore.push(pNodes[j].textContent.trim());
+                    }
+
+                    const extraNode = entryNode.getElementsByTagName("extra")[0];
+                    const extra = extraNode ? extraNode.textContent.trim() : null;
+
+                    loadedData.push({
+                        id, name, type, category, tagClass, quote, stats, lore, extra
+                    });
+                }
+
+                database = loadedData;
+                renderList();
+                showDefaultPlaceholders();
+            } catch (error) {
+                console.error("XML Parsing error:", error);
+                showErrorScreen();
+            }
+        }
+
+        function showDefaultPlaceholders() {
+            statsPanel.innerHTML = `
+                <div class="placeholder">
+                    <div class="placeholder-icon"></div>
+                    <p>Select an item.</p>
+                </div>
+            `;
+            lorePanel.innerHTML = `
+                <div class="placeholder">
+                    <div class="placeholder-icon"></div>
+                    <p>Info will display here.</p>
+                </div>
+            `;
+        }
+
+        function showErrorScreen() {
+            statsPanel.innerHTML = `
+                <div class="placeholder" style="color: #d93025;">
+                    <div class="placeholder-icon"></div>
+                    <p><strong>Database Load Failure</strong></p>
+                    <p style="font-size: 12px; color: var(--text-muted); max-width: 280px; margin-top: 8px; line-height: 1.5;">
+                        Unable to parse database source from index.js.
+                    </p>
+                </div>
+            `;
+            lorePanel.innerHTML = `
+                <div class="placeholder">
+                    <div class="placeholder-icon"></div>
+                    <p>Operational archives unavailable.</p>
+                </div>
+            `;
+        }
+
+        function filterType(type) {
+            currentTypeFilter = type;
+            document.querySelectorAll(".filter-pill").forEach(pill => {
+                pill.classList.toggle("active", pill.getAttribute("data-filter") === type);
+            });
+            renderList();
+        }
+
+        searchInput.addEventListener("input", (e) => {
+            searchQuery = e.target.value.toLowerCase();
+            renderList();
+        });
+
+        function renderList() {
+            listContainer.innerHTML = "";
+            const sortOrder = sortOrderSelect.value;
+            const groupingMode = groupingModeSelect.value;
+
+            let filtered = database.filter(entry => {
+                const matchesType = currentTypeFilter === "all" || entry.category === currentTypeFilter || entry.type === currentTypeFilter;
+                const matchesSearch = entry.name.toLowerCase().includes(searchQuery) ||
+                                      entry.type.toLowerCase().includes(searchQuery);
+                return matchesType && matchesSearch;
+            });
+
+            filtered.sort((a, b) => {
+                const comparison = a.name.localeCompare(b.name);
+                return sortOrder === "asc" ? comparison : -comparison;
+            });
+
+            if (filtered.length === 0) {
+                listContainer.innerHTML = `<div style="padding: 24px; text-align: center; color: var(--text-muted); font-size: 13px;">No entries match your search.</div>`;
+                return;
+            }
+
+            if (groupingMode === "mixed") {
+                filtered.forEach(entry => {
+                    const li = createListItem(entry);
+                    listContainer.appendChild(li);
+                });
+            } else {
+                const groups = {};
+                filtered.forEach(entry => {
+                    if (!groups[entry.type]) groups[entry.type] = [];
+                    groups[entry.type].push(entry);
+                });
+
+                for (const [category, items] of Object.entries(groups)) {
+                    const header = document.createElement("div");
+                    header.className = "category-header";
+                    header.innerText = category;
+                    listContainer.appendChild(header);
+
+                    items.forEach(entry => {
+                        const li = createListItem(entry);
+                        listContainer.appendChild(li);
+                    });
+                }
+            }
+        }
+
+        function createListItem(entry) {
+            const li = document.createElement("li");
+            li.className = `unit-item`;
+            li.setAttribute("data-id", entry.id);
+            li.innerHTML = `
+                <div class="unit-info-left">
+                    <div class="unit-item-name">${entry.name}</div>
+                    <span class="unit-item-tag ${entry.tagClass}">${entry.type}</span>
+                </div>
+            `;
+            li.addEventListener("click", () => selectEntry(entry, li));
+            return li;
+        }
+
+        function updateFilters() {
+            renderList();
+        }
+
+        function selectEntry(entry, element) {
+            document.querySelectorAll(".unit-item").forEach(item => item.classList.remove("active"));
+            if (element) {
+                element.classList.add("active");
+            } else {
+                const foundItem = document.querySelector(`.unit-item[data-id="${entry.id}"]`);
+                if (foundItem) foundItem.classList.add("active");
+            }
+
+            let statsHTML = `
+                <div class="section-title">System Attributes</div>
+                <div class="card">
+                    <div class="stats-grid">
+            `;
+
+            entry.stats.forEach(stat => {
+                statsHTML += `
+                    <div class="stat-pair">
+                        <div class="stat-label">${stat.label}</div>
+                        <div class="stat-value">
+                            ${stat.value}
+                        </div>
+                    </div>
+                `;
+            });
+
+            statsHTML += `</div></div>`;
+            statsPanel.innerHTML = statsHTML;
+
+            let loreHTML = `
+                <div class="section-title">In-Universe Dossier</div>
+                <div class="lore-title">${entry.name}</div>
+                <div class="lore-tagline">${entry.type} Profile</div>
+                <div class="lore-quote">"${entry.quote}"</div>
+                <div class="lore-text">
+            `;
+
+            entry.lore.forEach(para => {
+                loreHTML += `<p>${para}</p>`;
+            });
+
+            loreHTML += `</div>`;
+
+            if (entry.extra) {
+                loreHTML += `
+                    <div class="extras-box">
+                        <button class="extras-btn" onclick="revealIntel(this)">Side Info</button>
+                        <div class="extras-content">${entry.extra}</div>
+                    </div>
+                `;
+            }
+
+            lorePanel.innerHTML = loreHTML;
+            bindWikiLinks();
+        }
+
+        function bindWikiLinks() {
+            document.querySelectorAll(".wiki-link").forEach(link => {
+                const newLink = link.cloneNode(true);
+                link.parentNode.replaceChild(newLink, link);
+
+                newLink.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const targetId = newLink.getAttribute("data-id");
+                    navigateTo(targetId);
+                });
+            });
+        }
+
+        function navigateTo(id) {
+            const entry = database.find(item => item.id === id);
+            if (entry) {
+                currentTypeFilter = "all";
+                document.querySelectorAll(".filter-pill").forEach(pill => {
+                    pill.classList.toggle("active", pill.getAttribute("data-filter") === "all");
+                });
+                searchInput.value = "";
+                searchQuery = "";
+
+                renderList();
+
+                const element = document.querySelector(`.unit-item[data-id="${id}"]`);
+                selectEntry(entry, element);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            }
+        }
+
+        function revealIntel(btn) {
+            const container = btn.nextElementSibling;
+            container.classList.toggle("unlocked");
+            btn.innerHTML = container.classList.contains("unlocked") ? "Close" : "Side Info";
+        }
+
+        initTheme();
+        loadDatabase();
+    </script>
+</body>
+</html>
