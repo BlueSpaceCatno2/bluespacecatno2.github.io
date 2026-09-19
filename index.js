@@ -7,7 +7,7 @@ const xmlDatabaseSource = `
 <type>Character</type>
 <category>Character</category>
 <tagClass>tag-character</tagClass>
-<quote>He is literally a mining technician. He is not a combat expert, just a regular guy forced to figure it out on the job.</quote>
+<quote>Mining technician. Not a combat expert, just a regular guy forced to figure it out on the job.</quote>
 <stats>
 <stat label="Role">Syndicate Leader &amp; Electrician Student</stat>
 <stat label="Vehicle Blueprints">Custom Tan SUV</stat>
@@ -16,11 +16,11 @@ const xmlDatabaseSource = `
 <stat label="Primary Armament">&lt;span class='wiki-link' data-id='cd-13-rifle'&gt;CD-13 Automatic Rifle&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>Bran Davis is a regular working-class guy who wanted to be an electrician. Because he couldn't find an apprenticeship, he took a heavy mining job in the Proxima system instead.</p>
-<p>When the militaristic Derrulicants attacked his platform on Startis, he fled in his custom tan &lt;span class='wiki-link' data-id='suv'&gt;SUV&lt;/span&gt;. He was later promoted to captain of the Syndicate command vessel after the previous captain died of a mysterious disease.</p>
-<p>Despite having zero military background, his expertise with complex heavy mining rigging and basic electrical circuitry makes him the practical heartbeat of the human resistance.</p>
+<p>Bran Davis: regular working-class electrician student. Apprenticeship unavailable; heavy mining job taken in Proxima system instead.</p>
+<p>Militaristic Derrulicants attack platform on Startis. Flight in custom tan &lt;span class='wiki-link' data-id='suv'&gt;SUV&lt;/span&gt;. Promotion to captain of Syndicate command vessel after previous captain's death from mysterious disease.</p>
+<p>Zero military background. Expertise with complex heavy mining rigging and basic electrical circuitry. Practical heartbeat of human resistance.</p>
 </lore>
-<extra>System Record: Bran Davis's command desk contains a real-world relic—a standard Dell L100 computer keyboard with the corporate logo pried off. His custom Tan mining SUV carries 125 additional HP (200 total) and 2 additional armor (4 total) on easier difficulties to buffer player error, scaling down to standard stats on Hard. In combat, Bran deals slightly less damage (8 damage) than typical hero units (10 damage) to reflect his civilian background.</extra>
+<extra>System Record: Bran Davis's command desk contains a real-world relic—a standard Dell L100 computer keyboard with the corporate logo pried off. Custom Tan mining SUV carries 125 additional HP (200 total) and 2 additional armor (4 total) on easier difficulties to buffer player error, scaling down to standard stats on Hard. In combat, Bran deals slightly less damage (8 damage) than typical hero units (10 damage) to reflect civilian background.</extra>
 </entry>
 
 <entry id="prius">
@@ -28,7 +28,7 @@ const xmlDatabaseSource = `
 <type>Character</type>
 <category>Character</category>
 <tagClass>tag-character</tagClass>
-<quote>A paranoid ruler hiding behind holographic monitors to protect a fake legacy.</quote>
+<quote>Paranoid ruler hiding behind holographic monitors to protect a fake legacy.</quote>
 <stats>
 <stat label="Faction Role">Supreme Sovereign of the Enclave Purists</stat>
 <stat label="Visual Presence">Communicates strictly via glowing blue holograms</stat>
@@ -36,9 +36,9 @@ const xmlDatabaseSource = `
 <stat label="Psychological State">Advanced Paranoia &amp; Insomnia</stat>
 </stats>
 <lore>
-<p>Prius served as an Enclave warship captain during the historic battle that witnessed the catastrophic &lt;span class='wiki-link' data-id='starforge-explosion'&gt;Destruction of the Star Forge&lt;/span&gt;. Instead of fighting, Prius hid his cruiser due to navigation flight log errors and an alleged engine failure, hiding his true cowardice from his bridge crew.</p>
-<p>The persistent dread of his desertion being unearthed has slowly driven him insane. He rules his crumbling empire behind a curtain of heavy digital surveillance and constant holograms.</p>
-<p>He orchestrated the Syndicate's war against the Derrulicants to strategically dismantle a rival Star Forge project on Startis, burying any residual proof of his historic cowardice.</p>
+<p>Prius: Enclave warship captain during historic battle of catastrophic &lt;span class='wiki-link' data-id='starforge-explosion'&gt;Destruction of the Star Forge&lt;/span&gt;. Cruiser hidden due to navigation flight log errors and alleged engine failure. Cowardice concealed from bridge crew.</p>
+<p>Persistent dread of desertion discovery leading to gradual insanity. Crumbling empire ruled behind heavy digital surveillance and constant holograms.</p>
+<p>Orchestration of Syndicate war against Derrulicants for strategic dismantling of rival Star Forge project on Startis. Burial of residual proof of historic cowardice.</p>
 </lore>
 <extra>System Record: Prius obsessively tracks the 25 surviving derelict Enclave warships that escaped the Star Forge explosion, seeking to destroy them before any surviving crew can expose his fraudulent history.</extra>
 </entry>
@@ -48,7 +48,7 @@ const xmlDatabaseSource = `
 <type>Character</type>
 <category>Character</category>
 <tagClass>tag-character</tagClass>
-<quote>Jeffery is long gone. His heavy armor suit is now steered by the merged mind of Dr. Stafford.</quote>
+<quote>Jeffery long gone. Heavy armor suit steered by merged mind of Dr. Stafford.</quote>
 <stats>
 <stat label="Faction Alignment">Biomass Intelligent Hive Mind</stat>
 <stat label="Host Identity">Former BMO Officer Jeffery (ID #033198)</stat>
@@ -56,9 +56,9 @@ const xmlDatabaseSource = `
 <stat label="Cause">Stuttering metabolic body-heat stabilizer</stat>
 </stats>
 <lore>
-<p>During the early days of the biological crisis on Earth, Jeffery was an officer in the BMO screening team. After his patrol was wiped out, his containment armor was hijacked by the consciousness of chief researcher Dr. Glenn Stafford.</p>
-<p>Stafford injected himself with a flawed prototype &lt;span class='wiki-link' data-id='dna-stabilizer'&gt;DNA Stabilizer&lt;/span&gt; corrupted by pathogen cells. While ordinary Biomass creatures are mindless, Stafford's merged mind possesses the coordination to direct the swarm.</p>
-<p>He behaves twitchily because his suit's 6-part stabilizer distributes metabolic body heat unevenly across extremity modules during the cellular merge, disrupting joint power systems.</p>
+<p>Early Earth biological crisis: Jeffery as officer in BMO screening team. Patrol wiped out; containment armor hijacked by consciousness of chief researcher Dr. Glenn Stafford.</p>
+<p>Injection of flawed prototype &lt;span class='wiki-link' data-id='dna-stabilizer'&gt;DNA Stabilizer&lt;/span&gt; corrupted by pathogen cells. Ordinary Biomass creatures mindless; Stafford's merged mind possessing coordination for swarm direction.</p>
+<p>Twitchy behavior from suit's 6-part stabilizer distributing metabolic body heat unevenly across extremity modules during cellular merge, disrupting joint power systems.</p>
 </lore>
 <extra>Easter Egg: Jeffery's BMO Officer ID is #033198, a direct reference to the release date of the original StarCraft (March 31, 1998). Stafford is also named after Glenn Stafford, Starcraft's legendary composer.</extra>
 </entry>
@@ -68,7 +68,7 @@ const xmlDatabaseSource = `
 <type>Character</type>
 <category>Character</category>
 <tagClass>tag-character</tagClass>
-<quote>A boots-on-the-ground operative facing down a global biological collapse.</quote>
+<quote>Boots-on-the-ground operative facing down a global biological collapse.</quote>
 <stats>
 <stat label="Official ID">#072710 (BMO Archives)</stat>
 <stat label="Deployment Zone">BMO Earth Headquarters</stat>
@@ -76,9 +76,9 @@ const xmlDatabaseSource = `
 <stat label="Status">Killed in Action</stat>
 </stats>
 <lore>
-<p>Tanner was a frontline officer for the Biomass Management Organisation (BMO) on Earth. When his entire six-man screening team was slaughtered during an outbreak, Tanner navigated the quarantine zone alone.</p>
-<p>He located BMO headquarters and successfully coordinated an evacuation helicopter, only to have the blades destroyed by leaping biological anomalies, crashing him back into the wasteland.</p>
-<p>He eventually sacrificed his life by destroying the escape rocket in mid-launch, choosing death to ensure the mutating Biomass pathogen could not spread to other solar systems.</p>
+<p>Tanner: frontline officer for Biomass Management Organisation (BMO) on Earth. Entire six-man screening team slaughtered during outbreak; solo navigation of quarantine zone.</p>
+<p>Location of BMO headquarters and successful evacuation helicopter coordination. Blades destroyed by leaping biological anomalies, crashing back into wasteland.</p>
+<p>Ultimate sacrifice via escape rocket destruction in mid-launch, ensuring mutating Biomass pathogen spread prevention to other solar systems.</p>
 </lore>
 <extra>System ID Note: Tanner's registration number #072710 is a direct reference to July 27, 2010—the release date of StarCraft II: Wings of Liberty.</extra>
 </entry>
@@ -88,7 +88,7 @@ const xmlDatabaseSource = `
 <type>Character</type>
 <category>Character</category>
 <tagClass>tag-character</tagClass>
-<quote>Left unarmed and unarmored in a hostile wasteland, Jamison fights with pure grit.</quote>
+<quote>Unarmed and unarmored in a hostile wasteland, Jamison fights with pure grit.</quote>
 <stats>
 <stat label="Armor Frame">15% larger than standard Syndicate suits</stat>
 <stat label="True HP Capacity">250 HP</stat>
@@ -97,9 +97,9 @@ const xmlDatabaseSource = `
 <stat label="Rifle Damage">10 Damage</stat>
 </stats>
 <lore>
-<p>Jamison was deployed aboard a security shuttle dispatched during the crash-landing of a Blue Ops ship downed by automated fire. During descent, his shuttle's wing was sheared off, popping the locks on the crew module.</p>
-<p>He managed to claw open a jammed safety rack bare-handed, climbing into his heavy exo-suit right before impact. Although his physical rifle fell off a cliff during a biological ambush, Jamison beat the creatures with his fists.</p>
-<p>He is left stranded in the wasteland after hydraulic line leaks forced him to completely eject his heavy chestplate to survive.</p>
+<p>Deployment aboard security shuttle during crash-landing of Blue Ops ship downed by automated fire. Wing sheared off during descent, popping crew module locks.</p>
+<p>Manual clawing open of jammed safety rack bare-handed, climbing into heavy exo-suit right before impact. Physical rifle lost off cliff during biological ambush; creature defeat via fists.</p>
+<p>Stranding in wasteland after hydraulic line leaks forced heavy chestplate ejection for survival.</p>
 </lore>
 </entry>
 
@@ -108,16 +108,16 @@ const xmlDatabaseSource = `
 <type>Character</type>
 <category>Character</category>
 <tagClass>tag-character</tagClass>
-<quote>The original captain of the Syndicate command ship whose tragic death promoted Bran Davis.</quote>
+<quote>Original captain of Syndicate command ship whose tragic death promoted Bran Davis.</quote>
 <stats>
 <stat label="Former Command">Syndicate Exploratory Warship</stat>
-<stat label="Primary Cause of Death">Genetic immunity collision of the Proxima pathogen</stat>
+<stat label="Primary Cause of Death">Genetic immunity collision of Proxima pathogen</stat>
 <stat label="Age of Onset">30 Standard Years</stat>
 </stats>
 <lore>
-<p>The former captain of Bran's command ship died shortly after arrival in the Proxima system. His death was kept highly quiet by the command staff.</p>
-<p>He succumbed to the Earth-born pathogen due to a tragic genetic loophole: his parents' individual immunity methods crossed in a manner that completely nullified his immunity by age 30.</p>
-<p>The only in-game evidence of his passing is a strange purple stain in his private quarters, left behind during his final cellular collapse.</p>
+<p>Former captain of Bran's command ship deceased shortly after Proxima system arrival. Death kept quiet by command staff.</p>
+<p>Earth-born pathogen fatality due to genetic loophole: parents' individual immunity methods crossing in a manner completely nullifying immunity by age 30.</p>
+<p>Sole in-game evidence: strange purple stain in private quarters from final cellular collapse.</p>
 </lore>
 </entry>
 
@@ -126,16 +126,16 @@ const xmlDatabaseSource = `
 <type>Character</type>
 <category>Character</category>
 <tagClass>tag-character</tagClass>
-<quote>A courageous official who paid the ultimate price for revealing Prius's cowardice.</quote>
+<quote>Courageous official who paid ultimate price for revealing Prius's cowardice.</quote>
 <stats>
 <stat label="Jurisdiction">Enclave Council Room</stat>
-<stat label="Action">Leaked files showing the Star Forge engine cover-up</stat>
+<stat label="Action">Leaked files showing Star Forge engine cover-up</stat>
 <stat label="Current Status">Assassinated (Silenced by Enclave operatives)</stat>
 </stats>
 <lore>
-<p>An elder within the Enclave ruling council who discovered the true files of Prius's desertion during the destruction of the Star Forge.</p>
-<p>He contacted Bran Davis, leaking proof of Prius's corruption and his hidden schemes to destroy the Derrulicants simply to silence rival projects.</p>
-<p>Right after Bran attempted to verify this information, the elder was found dead in his quarters, orchestrating the final split between the Syndicate and Enclave.</p>
+<p>Enclave ruling council elder discovering true files of Prius's desertion during Star Forge destruction.</p>
+<p>Contact with Bran Davis, leaking proof of Prius's corruption and hidden schemes to destroy Derrulicants for rival project silencing.</p>
+<p>Discovery of elder dead in quarters immediately after Bran's verification attempt, orchestrating final split between Syndicate and Enclave.</p>
 </lore>
 </entry>
 
@@ -144,16 +144,16 @@ const xmlDatabaseSource = `
 <type>Character</type>
 <category>Character</category>
 <tagClass>tag-character</tagClass>
-<quote>An immortal tyrant piloting a heavily stabilized biological system.</quote>
+<quote>Immortal tyrant piloting a heavily stabilized biological system.</quote>
 <stats>
 <stat label="Jurisdiction">Torus VI Core Command</stat>
 <stat label="Genetic Status">Heavily infected yet fully sentient</stat>
 <stat label="Stabilizers Held">4 Active Syncon Stasis Stabilizers</stat>
 </stats>
 <lore>
-<p>The Supreme Commander of the Derrulicants. He rules the industrial stronghold of &lt;span class='wiki-link' data-id='torus-purge'&gt;Torus VI&lt;/span&gt; with iron efficiency.</p>
-<p>He contracted the Biomass virus early in the war but bypassed cognitive decline by recovering and installing four separate genetic stabilizers directly into his body.</p>
-<p>This extreme biological engineering makes him practically immortal, preserving his intellect even as his body undergoes creeping mutations.</p>
+<p>Supreme Commander of Derrulicants. Ruler of industrial stronghold of &lt;span class='wiki-link' data-id='torus-purge'&gt;Torus VI&lt;/span&gt; with iron efficiency.</p>
+<p>Biomass virus contraction early in war, cognitive decline avoidance via four separate genetic stabilizers recovered and installed directly into body.</p>
+<p>Extreme biological engineering creating practical immortality, preserving intellect despite creeping body mutations.</p>
 </lore>
 </entry>
 
@@ -176,8 +176,8 @@ const xmlDatabaseSource = `
 <stat label="Tags">Light, Infantry, Biological</stat>
 </stats>
 <lore>
-<p>The standard infantry of the Syndicate consists of miners and construction workers piloting modified 1.5-ton industrial pallet stackers retrofitted with machine guns.</p>
-<p>The suit's slight 5 HP advantage over standard RTS templates comes from a microscopic amount of Caspium dust added into the plating during fabrication. However, inhaling this dust can cause terminal lung cancer.</p>
+<p>Standard Syndicate infantry: miners and construction workers piloting modified 1.5-ton industrial pallet stackers retrofitted with machine guns.</p>
+<p>Slight 5 HP advantage over standard RTS templates from microscopic Caspium dust amount added to plating during fabrication. Terminal lung cancer risk from inhalation.</p>
 </lore>
 <extra>Secret File: Syndicate soldiers are notorious for manually overriding their suit's internal water storage, dumping moonshine or fermented fruit mash directly into their water filters to get through their long watch-shifts. Many soldiers are survivors of minor genetic pathogen deficiencies given frontline roles.</extra>
 </entry>
@@ -198,8 +198,8 @@ const xmlDatabaseSource = `
 <stat label="Tags">Light, Mechanical</stat>
 </stats>
 <lore>
-<p>The Prawn is a dedicated base builder and mechanical field support unit. Built on an elevated soldier suit chassis with increased pneumatic lift power, it lacks weapons but repairs pipelines, structures, and mechs.</p>
-<p>Because the Syndicate lacks a mobile artillery vehicle, players must physically escort fragile Prawn units directly to the front lines to construct stationary artillery structures.</p>
+<p>Dedicated base builder and mechanical field support unit. Built on elevated soldier suit chassis with increased pneumatic lift power, lacking weapons but repairing pipelines, structures, and mechs.</p>
+<p>Absence of mobile artillery vehicle requiring players to physically escort fragile Prawn units directly to front lines for stationary artillery structure construction.</p>
 </lore>
 </entry>
 
@@ -220,7 +220,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Medium, Biological</stat>
 </stats>
 <lore>
-<p>The Enforcer is a heavy infantry unit serving as a direct combat upgrade to the basic &lt;span class='wiki-link' data-id='soldier'&gt;Soldier&lt;/span&gt;, utilizing reinforced alloy plates to survive high-kinetic impacts.</p>
+<p>Heavy infantry unit serving as direct combat upgrade to basic &lt;span class='wiki-link' data-id='soldier'&gt;Soldier&lt;/span&gt;, utilizing reinforced alloy plates for high-kinetic impact survival.</p>
 </lore>
 </entry>
 
@@ -243,7 +243,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Light, Mechanical, Vehicle</stat>
 </stats>
 <lore>
-<p>The Skidder was originally designed as an industrial logging tractor. Retrofitted with arcing grenade launchers, its wheel platform fires slightly faster when fully stationary.</p>
+<p>Original design as industrial logging tractor. Retrofitted with arcing grenade launchers, wheel platform firing slightly faster when fully stationary.</p>
 </lore>
 </entry>
 
@@ -266,7 +266,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Heavy, Infantry, Biological</stat>
 </stats>
 <lore>
-<p>Equipped with heavy flamethrowers designed to clear out Biomass creep trails. However, if hit by an attack delivering more than 15 HP of damage, there is a 50% chance its pressurized fuel lines detonate, damaging all nearby units.</p>
+<p>Equipped with heavy flamethrowers designed for Biomass creep trail clearance. Pressurized fuel line detonation risk (50% chance) when hit by attacks delivering more than 15 HP of damage, harming nearby units.</p>
 </lore>
 <extra>Technical Note: Incinerator suits are not airtight due to space limits. For vacuum operations, fuel tank #2 is drained and pressure-filled with oxygen; planetary ops rely on active CO2-to-O2 filters.</extra>
 </entry>
@@ -289,7 +289,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Light, Biological, Support</stat>
 </stats>
 <lore>
-<p>Unlike typical combat stims, the Syndicate Medic administers the stim boost directly to biological targets, keeping the fire-rate bonus active only as long as the target is being actively healed.</p>
+<p>Direct biological target stim boost administration by Syndicate Medic, maintaining fire-rate bonus exclusively during active healing.</p>
 </lore>
 </entry>
 
@@ -312,7 +312,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Medium, Mechanical, Vehicle</stat>
 </stats>
 <lore>
-<p>The tactical Support Vehicle serves as the absolute cover unit of Proxima. Triggering its self-destruct command instantly ejects a defensive field of five cloaked proximity mines to block base entry. Units disembark 2 per side from left to right when unloaded.</p>
+<p>Tactical Support Vehicle serving as Proxima cover unit. Self-destruct command activation instantly ejecting defensive field of five cloaked proximity mines for base entry blocking. Unit disembarkation at 2 per side from left to right during unloading.</p>
 </lore>
 </entry>
 
@@ -336,7 +336,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Robotic, Heavy Armor, Mechanical</stat>
 </stats>
 <lore>
-<p>The Sentry cannot attack unless anchored in its deployed mode. When deployed, it acts as a radar station, granting +1 range, exposing cloaked units, and gaining a +40% fire-rate bonus for each additional sieged Sentry nearby. Pneumatic firing triggers supersonic bullet acoustics.</p>
+<p>Attack impossibility without anchoring in deployed mode. Deployment function as radar station: +1 range grant, cloaked unit exposure, +40% fire-rate bonus per additional sieged Sentry nearby. Pneumatic firing triggering supersonic bullet acoustics.</p>
 </lore>
 </entry>
 
@@ -358,7 +358,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Heavy, Infantry, Mechanical</stat>
 </stats>
 <lore>
-<p>The Bulwark is a mid-to-late game armored frame, utilizing independent rocket pods that can target two different units simultaneously.</p>
+<p>Mid-to-late game armored frame utilizing independent rocket pods for simultaneous targeting of two separate units.</p>
 </lore>
 </entry>
 
@@ -379,7 +379,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Lightweight, Drone, Mechanical</stat>
 </stats>
 <lore>
-<p>Aero Drones are highly maneuverable scouts. Activating Overcharger mode slows their propulsion but increases their fire rate to 100 rounds per second, vaporizing biological swarms.</p>
+<p>Highly maneuverable scout. Overcharger mode activation slowing propulsion while increasing fire rate to 100 rounds per second for biological swarm vaporization.</p>
 </lore>
 </entry>
 
@@ -401,7 +401,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Medium, Mechanical, Air</stat>
 </stats>
 <lore>
-<p>The only human military-grade vehicle, retrieved from the hangars of demobilized cryo-ships. Most weapons in the system are reverse-engineered from Valkyrie parts.</p>
+<p>Sole human military-grade vehicle retrieved from demobilized cryo-ship hangars. System weapon origin largely from Valkyrie part reverse-engineering.</p>
 </lore>
 </entry>
 
@@ -424,7 +424,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Heavy, Mechanical, Air, Massive</stat>
 </stats>
 <lore>
-<p>Modified from flat-bottomed cargo transport frames designed by BSC Inc. While carrying devastating anti-ground and anti-air missile packages, its reliance on dual VTOL turbofans makes it incredibly slow to lift if one turbofan is destroyed. Larger Syndicate space force flagships like Supercarriers and Nailheads dominate orbital space.</p>
+<p>Modification from flat-bottomed cargo transport frames designed by BSC Inc. Devastating anti-ground and anti-air missile package inclusion; dual VTOL turbofan reliance resulting in extreme lift slowness upon single turbofan destruction. Larger Syndicate space force flagships (Supercarriers, Nailheads) dominating orbital space.</p>
 </lore>
 </entry>
 
@@ -446,7 +446,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Heavy, Mechanical, Energy, Walker</stat>
 </stats>
 <lore>
-<p>The Archon utilizes advanced Enclave shielding technology. Its hard-light shielding absorbs incoming heavy ballistic impacts, allowing its thermal laser to systematically melt through armor.</p>
+<p>Utilization of advanced Enclave shielding technology. Hard-light shielding absorption of incoming heavy ballistic impacts, enabling thermal laser systematic armor melting.</p>
 </lore>
 </entry>
 
@@ -466,7 +466,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Light, Biological, Infantry</stat>
 </stats>
 <lore>
-<p>The Steward is a fragile biological melee unit deployed during early territory grabs to act as high-damage defenders and basic bullet shields.</p>
+<p>Fragile biological melee unit deployed during early territory grabs for high-damage defense and basic bullet shielding.</p>
 </lore>
 </entry>
 
@@ -486,7 +486,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Heavy, Armored, Mechanical</stat>
 </stats>
 <lore>
-<p>The standard armored vehicle of the Enclave, utilizing concentrated plasma orbs to dissolve heavy fortifications.</p>
+<p>Standard Enclave armored vehicle utilizing concentrated plasma orbs for heavy fortification dissolution.</p>
 </lore>
 </entry>
 
@@ -506,7 +506,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Heavy, Armored, Mechanical, Walker</stat>
 </stats>
 <lore>
-<p>Pioneers are heavy walking shields, built to march directly into dense bases to absorb return fire.</p>
+<p>Heavy walking shields built for direct march into dense bases to absorb return fire.</p>
 </lore>
 </entry>
 
@@ -526,7 +526,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Light, Armored, Mechanical</stat>
 </stats>
 <lore>
-<p>A fast scout specifically designed to ignite light infantry, though its low base damage makes it entirely useless against heavy armor.</p>
+<p>Fast scout specifically designed for light infantry ignition, rendered entirely useless against heavy armor due to low base damage.</p>
 </lore>
 </entry>
 
@@ -546,7 +546,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Heavy, Armored, Mechanical</stat>
 </stats>
 <lore>
-<p>The Python represents the absolute peak of the Enclave's armored division, delivering high-impact plasma bursts designed to instantly compromise vehicle hulls.</p>
+<p>Absolute peak of Enclave armored division, delivering high-impact plasma bursts designed for instant vehicle hull compromise.</p>
 </lore>
 </entry>
 
@@ -566,7 +566,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Medium, Armored, Mechanical, Air</stat>
 </stats>
 <lore>
-<p>The Harpy uses a Charged Lance that deals continuous damage, increasing in output the longer its laser beam remains locked onto a single target.</p>
+<p>Charged Lance utilization for continuous damage output scaling with laser beam duration locked on single target.</p>
 </lore>
 </entry>
 
@@ -586,7 +586,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Heavy, Mechanical, Armored, Massive, Air</stat>
 </stats>
 <lore>
-<p>A massive floating platform that drifts over battlefields, firing its four independently-aimed ion turrets to dissolve ground and air threats.</p>
+<p>Massive floating platform drifting over battlefields, firing four independently-aimed ion turrets for ground and air threat dissolution.</p>
 </lore>
 </entry>
 
@@ -606,7 +606,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Light, Mechanical, Robotic, Air</stat>
 </stats>
 <lore>
-<p>Phosphate drones are highly volatile, cheap kamikaze units programmed to launch into air swarms and detonate to instantly clear airspace.</p>
+<p>Highly volatile, cheap kamikaze units programmed for air swarm launch and detonation for instant airspace clearance.</p>
 </lore>
 </entry>
 
@@ -627,7 +627,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Light, Biological</stat>
 </stats>
 <lore>
-<p>Biters are the basic infantry of the Biomass. Unchanged across all three biological strains, they rely on rapid numbers to swarm defenses despite being weak to fire.</p>
+<p>Basic Biomass infantry. Unchanged across three biological strains, relying on rapid numbers for defense swarming despite fire vulnerability.</p>
 </lore>
 </entry>
 
@@ -648,7 +648,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Medium, Biological, Melee</stat>
 </stats>
 <lore>
-<p>The Standard Strain melee unit, utilizing claws coated in a highly concentrated biological acid (pH 1.2) to rapidly slice through metal plating.</p>
+<p>Standard Strain melee unit utilizing claws coated in concentrated biological acid (pH 1.2) for rapid metal plating slicing.</p>
 </lore>
 </entry>
 
@@ -669,7 +669,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Medium, Biological, Melee, Acid</stat>
 </stats>
 <lore>
-<p>Feral biters expand with pressurized digestive acid (pH 0.8), charging directly into mechanical clusters to rupture and explode upon contact.</p>
+<p>Feral biters expanding with pressurized digestive acid (pH 0.8), charging directly into mechanical clusters for rupture and contact explosion.</p>
 </lore>
 </entry>
 
@@ -689,7 +689,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Medium, Biological, Melee, Primal</stat>
 </stats>
 <lore>
-<p>The raw muscle of the Primal strain, shrugging off minor wounds to physically crush standard armored defenses.</p>
+<p>Raw muscle of Primal strain, shrugging off minor wounds for physical crushing of standard armored defenses.</p>
 </lore>
 </entry>
 
@@ -710,7 +710,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Light, Biological</stat>
 </stats>
 <lore>
-<p>The primary ranged support for the Standard strain, firing digestive bile from a safe distance to dissolve infantry.</p>
+<p>Primary ranged support for Standard strain, firing digestive bile from safe distance for infantry dissolution.</p>
 </lore>
 </entry>
 
@@ -731,7 +731,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Medium, Biological, Acid</stat>
 </stats>
 <lore>
-<p>Though dealing heavy acid spray, Gaggers make an incredibly loud gagging noise that can occasionally be heard through the fog of war by enemies. Excellent for dissolving early Incinerators or Archons.</p>
+<p>Heavy acid spray output accompanied by extremely loud gagging noise audible through fog of war by enemies. Excellent for early Incinerator or Archon dissolution.</p>
 </lore>
 </entry>
 
@@ -751,7 +751,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Medium, Biological, Primal</stat>
 </stats>
 <lore>
-<p>Primal hunters that fire calcified spikes to punch clean holes through heavy metal tanks and mechs.</p>
+<p>Primal hunters firing calcified spikes for clean hole punching through heavy metal tanks and mechs.</p>
 </lore>
 </entry>
 
@@ -773,7 +773,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Biological, Structure</stat>
 </stats>
 <lore>
-<p>Acts as a fortified bunker. While it can uproot and walk on limbs, moving off creep or losing the underlying slime causes instant death.</p>
+<p>Fortified bunker function. Ability to uproot and walk on limbs, with instant death upon moving off creep or underlying slime loss.</p>
 </lore>
 </entry>
 
@@ -794,7 +794,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Biological, Massive, Armored</stat>
 </stats>
 <lore>
-<p>Ignores 50% of the target's armor. However, if the player selects the Acid strain, Titans burrow underground and become completely inactive.</p>
+<p>50% target armor ignorance. Burrowing underground and complete inactivity upon player selection of Acid strain.</p>
 </lore>
 </entry>
 
@@ -814,7 +814,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Light, Biological, Air</stat>
 </stats>
 <lore>
-<p>Cheap, fast aerial pests designed to harass workers and scout ahead of the swarm.</p>
+<p>Cheap, fast aerial pests for worker harassment and swarm advance scouting.</p>
 </lore>
 </entry>
 
@@ -834,7 +834,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Light, Biological, Air, Acid</stat>
 </stats>
 <lore>
-<p>Leeches rush at enemy aircraft and explode, releasing pressurized dissolving chemicals.</p>
+<p>Rushing of enemy aircraft by Leeches with explosion and pressurized dissolving chemical release upon impact.</p>
 </lore>
 </entry>
 
@@ -854,7 +854,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Medium, Biological, Air, Primal</stat>
 </stats>
 <lore>
-<p>Sturdy aerial defenders that fire calcified bone lances to easily dominate skies.</p>
+<p>Sturdy aerial defenders firing calcified bone lances for easy sky dominance.</p>
 </lore>
 </entry>
 
@@ -874,7 +874,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Heavy, Biological, Support</stat>
 </stats>
 <lore>
-<p>Lashes out with tentacles, dragging light targets into its central crushing maw with a small chance to instantly kill them.</p>
+<p>Tentacle lash-out dragging light targets into central crushing maw with small instant-kill chance.</p>
 </lore>
 </entry>
 
@@ -894,7 +894,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Heavy, Biological, Acid</stat>
 </stats>
 <lore>
-<p>Coats choke points in continuous chemical spray that increases in toxicity the longer targets stand inside.</p>
+<p>Choke point coating in continuous chemical spray increasing in toxicity with target dwell duration.</p>
 </lore>
 </entry>
 
@@ -914,7 +914,7 @@ const xmlDatabaseSource = `
 <stat label="Tags">Heavy, Biological, Primal</stat>
 </stats>
 <lore>
-<p>The ultimate bio-artillery unit, firing massive bone-shielded spore pods to punch through base fortifications.</p>
+<p>Ultimate bio-artillery unit firing massive bone-shielded spore pods for base fortification punching.</p>
 </lore>
 </entry>
 
@@ -931,8 +931,8 @@ const xmlDatabaseSource = `
 <stat label="Structural Role">Tier 1 Infantry Assembly</stat>
 </stats>
 <lore>
-<p>The bedrock of Syndicate operations. It repurposes civilian miners and equips them with standard &lt;span class='wiki-link' data-id='soldier'&gt;Soldier&lt;/span&gt; frames.</p>
-<p>Additionally, this structure deploys &lt;span class='wiki-link' data-id='medic'&gt;Medics&lt;/span&gt;, field &lt;span class='wiki-link' data-id='prawn'&gt;Prawns&lt;/span&gt;, and high-heat &lt;span class='wiki-link' data-id='incinerator'&gt;Incinerators&lt;/span&gt; to combat the creeping Biomass threat.</p>
+<p>Bedrock of Syndicate operations. Repurposing of civilian miners with equipment of standard &lt;span class='wiki-link' data-id='soldier'&gt;Soldier&lt;/span&gt; frames.</p>
+<p>Additional deployment of &lt;span class='wiki-link' data-id='medic'&gt;Medics&lt;/span&gt;, field &lt;span class='wiki-link' data-id='prawn'&gt;Prawns&lt;/span&gt;, and high-heat &lt;span class='wiki-link' data-id='incinerator'&gt;Incinerators&lt;/span&gt; for creeping Biomass threat combat.</p>
 </lore>
 </entry>
 
@@ -948,8 +948,8 @@ const xmlDatabaseSource = `
 <stat label="Structural Role">Tier 2 Armored Mech Assembly</stat>
 </stats>
 <lore>
-<p>Constructs heavy-duty chassis modified from pre-war logistics machinery.</p>
-<p>It rolls out the fast &lt;span class='wiki-link' data-id='suv'&gt;Support SUV&lt;/span&gt;, the stationary &lt;span class='wiki-link' data-id='sentry'&gt;Sentry&lt;/span&gt;, and the high-yield &lt;span class='wiki-link' data-id='bulwark'&gt;Bulwark&lt;/span&gt; walker suits.</p>
+<p>Construction of heavy-duty chassis modified from pre-war logistics machinery.</p>
+<p>Rollout of fast &lt;span class='wiki-link' data-id='suv'&gt;Support SUV&lt;/span&gt;, stationary &lt;span class='wiki-link' data-id='sentry'&gt;Sentry&lt;/span&gt;, and high-yield &lt;span class='wiki-link' data-id='bulwark'&gt;Bulwark&lt;/span&gt; walker suits.</p>
 </lore>
 </entry>
 
@@ -965,8 +965,8 @@ const xmlDatabaseSource = `
 <stat label="Structural Role">Tier 3 Orbital &amp; Air Shipyard</stat>
 </stats>
 <lore>
-<p>Repurposes ancient exploratory hangar designs to field aerial support.</p>
-<p>Launches swarms of fast &lt;span class='wiki-link' data-id='drone'&gt;Aero Drones&lt;/span&gt;, robust &lt;span class='wiki-link' data-id='valkyrie'&gt;Valkyrie Fighters&lt;/span&gt;, and the colossal &lt;span class='wiki-link' data-id='chaffron'&gt;Chaffron Warships&lt;/span&gt;.</p>
+<p>Repurposing of ancient exploratory hangar designs for aerial support fielding.</p>
+<p>Launch of fast &lt;span class='wiki-link' data-id='drone'&gt;Aero Drones&lt;/span&gt;, robust &lt;span class='wiki-link' data-id='valkyrie'&gt;Valkyrie Fighters&lt;/span&gt;, and colossal &lt;span class='wiki-link' data-id='chaffron'&gt;Chaffron Warships&lt;/span&gt;.</p>
 </lore>
 </entry>
 
@@ -982,8 +982,8 @@ const xmlDatabaseSource = `
 <stat label="Structural Role">Tier 1 Gatekeepers</stat>
 </stats>
 <lore>
-<p>Uses starting Caspium reserves to cast protective combat frames.</p>
-<p>Fields rapid biological &lt;span class='wiki-link' data-id='steward'&gt;Stewards&lt;/span&gt; to absorb incoming fire, and heavy shielded &lt;span class='wiki-link' data-id='archon'&gt;Archon&lt;/span&gt; walker systems.</p>
+<p>Utilization of starting Caspium reserves for protective combat frame casting.</p>
+<p>Fielding of rapid biological &lt;span class='wiki-link' data-id='steward'&gt;Stewards&lt;/span&gt; for incoming fire absorption and heavy shielded &lt;span class='wiki-link' data-id='archon'&gt;Archon&lt;/span&gt; walker systems.</p>
 </lore>
 </entry>
 
@@ -999,8 +999,8 @@ const xmlDatabaseSource = `
 <stat label="Structural Role">Tier 2 Armored Assembly</stat>
 </stats>
 <lore>
-<p>Welds heavy steel plating onto automated vehicle platforms.</p>
-<p>Fields standard heavy &lt;span class='wiki-link' data-id='destroyer'&gt;Destroyers&lt;/span&gt; and defensive walking &lt;span class='wiki-link' data-id='pioneer'&gt;Pioneer&lt;/span&gt; divisions.</p>
+<p>Heavy steel plating welding onto automated vehicle platforms.</p>
+<p>Fielding of standard heavy &lt;span class='wiki-link' data-id='destroyer'&gt;Destroyers&lt;/span&gt; and defensive walking &lt;span class='wiki-link' data-id='pioneer'&gt;Pioneer&lt;/span&gt; divisions.</p>
 </lore>
 </entry>
 
@@ -1016,7 +1016,7 @@ const xmlDatabaseSource = `
 <stat label="Structural Role">Tier 3 Titan Assembly</stat>
 </stats>
 <lore>
-<p>Requires high levels of Caspium power to run. Launches highly agile &lt;span class='wiki-link' data-id='speeder'&gt;Speeders&lt;/span&gt; for reconnaissance and the massive, armored &lt;span class='wiki-link' data-id='python'&gt;Pythons&lt;/span&gt;.</p>
+<p>High Caspium power level requirement for operation. Launch of highly agile &lt;span class='wiki-link' data-id='speeder'&gt;Speeders&lt;/span&gt; for reconnaissance and massive armored &lt;span class='wiki-link' data-id='python'&gt;Pythons&lt;/span&gt;.</p>
 </lore>
 </entry>
 
@@ -1032,8 +1032,8 @@ const xmlDatabaseSource = `
 <stat label="Structural Role">Tier 3 Orbital Flight Deck</stat>
 </stats>
 <lore>
-<p>Structures a stable atmospheric warp gate to launch air sweeps.</p>
-<p>Constructs continuous-beam &lt;span class='wiki-link' data-id='harpy'&gt;Harpies&lt;/span&gt;, massive ion-guided &lt;span class='wiki-link' data-id='dirigible'&gt;Dirigibles&lt;/span&gt;, and explosive robotic &lt;span class='wiki-link' data-id='phosphate'&gt;Phosphate&lt;/span&gt; units.</p>
+<p>Stable atmospheric warp gate structuring for air sweep launches.</p>
+<p>Construction of continuous-beam &lt;span class='wiki-link' data-id='harpy'&gt;Harpies&lt;/span&gt;, massive ion-guided &lt;span class='wiki-link' data-id='dirigible'&gt;Dirigibles&lt;/span&gt;, and explosive robotic &lt;span class='wiki-link' data-id='phosphate'&gt;Phosphate&lt;/span&gt; units.</p>
 </lore>
 </entry>
 
@@ -1049,8 +1049,8 @@ const xmlDatabaseSource = `
 <stat label="Structural Role">Melee Spawning Node</stat>
 </stats>
 <lore>
-<p>A massive, breathing organic organ cluster that utilizes creep and protein reserves to mutate new life.</p>
-<p>Mutates basic &lt;span class='wiki-link' data-id='biter'&gt;Biters&lt;/span&gt; and allows evolution into specialized melee strains such as &lt;span class='wiki-link' data-id='feral'&gt;Ferals&lt;/span&gt; or &lt;span class='wiki-link' data-id='annihilator'&gt;Annihilators&lt;/span&gt;.</p>
+<p>Massive, breathing organic organ cluster utilizing creep and protein reserves for new life mutation.</p>
+<p>Mutation of basic &lt;span class='wiki-link' data-id='biter'&gt;Biters&lt;/span&gt; and evolution allowance into specialized melee strains like &lt;span class='wiki-link' data-id='feral'&gt;Ferals&lt;/span&gt; or &lt;span class='wiki-link' data-id='annihilator'&gt;Annihilators&lt;/span&gt;.</p>
 </lore>
 </entry>
 
@@ -1066,7 +1066,7 @@ const xmlDatabaseSource = `
 <stat label="Structural Role">Ranged &amp; Heavy Organic Spawner</stat>
 </stats>
 <lore>
-<p>Evolves advanced organism lines. Generates basic &lt;span class='wiki-link' data-id='spitter'&gt;Spitters&lt;/span&gt;, sensory &lt;span class='wiki-link' data-id='gagger'&gt;Gaggers&lt;/span&gt;, and the massive, armor-smashing &lt;span class='wiki-link' data-id='titan'&gt;Titans&lt;/span&gt;.</p>
+<p>Advanced organism line evolution. Generation of basic &lt;span class='wiki-link' data-id='spitter'&gt;Spitters&lt;/span&gt;, sensory &lt;span class='wiki-link' data-id='gagger'&gt;Gaggers&lt;/span&gt;, and massive armor-smashing &lt;span class='wiki-link' data-id='titan'&gt;Titans&lt;/span&gt;.</p>
 </lore>
 </entry>
 
@@ -1082,7 +1082,7 @@ const xmlDatabaseSource = `
 <stat label="Structural Role">Advanced Flying &amp; Support Nest</stat>
 </stats>
 <lore>
-<p>The peak of biological adaptation. Fields aerial pests like &lt;span class='wiki-link' data-id='stalker'&gt;Stalkers&lt;/span&gt; and heavy support units like the massive &lt;span class='wiki-link' data-id='husk'&gt;Husk&lt;/span&gt; spore-cannoneer.</p>
+<p>Peak of biological adaptation. Aerial pest fielding (e.g., &lt;span class='wiki-link' data-id='stalker'&gt;Stalkers&lt;/span&gt;) and heavy support unit fielding (e.g., massive &lt;span class='wiki-link' data-id='husk'&gt;Husk&lt;/span&gt; spore-cannoneer).</p>
 </lore>
 </entry>
 
@@ -1100,8 +1100,8 @@ const xmlDatabaseSource = `
 <stat label="Standard Users">&lt;span class='wiki-link' data-id='soldier'&gt;Soldier&lt;/span&gt;, &lt;span class='wiki-link' data-id='enforcer'&gt;Enforcer&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>The rugged, standard-issue firearm of the Syndicate. It is crafted with extremely thick steel siding to allow infantry to easily club threats when ammunition runs dry.</p>
-<p>Modified by some clever soldiers to fire devastating shotgun shells, though this specific modification remains highly illegal.</p>
+<p>Rugged, standard-issue Syndicate firearm. Extremely thick steel siding craft for infantry threat clubbing upon ammunition exhaustion.</p>
+<p>Clever soldier modification for shotgun shell firing (highly illegal modification).</p>
 </lore>
 </entry>
 
@@ -1118,7 +1118,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='bran-davis'&gt;Bran Davis&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>The exclusive firearm used by hero units. Its high-velocity firing mechanism punches straight through standard armor.</p>
+<p>Exclusive firearm used by hero units. High-velocity firing mechanism punching straight through standard armor.</p>
 </lore>
 </entry>
 
@@ -1135,7 +1135,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='incinerator'&gt;Incinerator&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>Highly dangerous, uninsulated fuel hoses that spray burning gel in a front cone to clear biological creep.</p>
+<p>Highly dangerous, uninsulated fuel hoses spraying burning gel in front cone for biological creep clearance.</p>
 </lore>
 </entry>
 
@@ -1152,7 +1152,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='medic'&gt;Medic&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>Fires medical-grade kinetic needles carrying biological agents to defend the operative while on active deployment.</p>
+<p>Medical-grade kinetic needle firing carrying biological agents for operative defense during active deployment.</p>
 </lore>
 </entry>
 
@@ -1169,7 +1169,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='skidder'&gt;Skidder&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>Launches quick, short-range arcing charges. Fire-rate improves when the vehicle is stationary.</p>
+<p>Quick, short-range arcing charge launch. Fire-rate improvement upon vehicle stationarity.</p>
 </lore>
 </entry>
 
@@ -1186,7 +1186,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='suv'&gt;Support SUV&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>A high-risk tactical mechanism that instantly vaporizes the deploying vehicle to create a massive defensive mine field.</p>
+<p>High-risk tactical mechanism instantly vaporizing deploying vehicle for massive defensive mine field creation.</p>
 </lore>
 </entry>
 
@@ -1203,7 +1203,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='sentry'&gt;Sentry&lt;/span&gt;, &lt;span class='wiki-link' data-id='chaffron'&gt;Chaffron&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>Fires homing missiles that lock onto enemy flyers, serving as a vital counter against air rushes.</p>
+<p>Homing missile firing locked onto enemy flyers, serving as vital air rush counter.</p>
 </lore>
 </entry>
 
@@ -1220,7 +1220,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='sentry'&gt;Sentry&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>A basic automated kinetic turret used for steady defense and screening light attackers.</p>
+<p>Basic automated kinetic turret for steady defense and light attacker screening.</p>
 </lore>
 </entry>
 
@@ -1236,7 +1236,7 @@ const xmlDatabaseSource = `
 <stat label="Primary Users">&lt;span class='wiki-link' data-id='bulwark'&gt;Bulwark&lt;/span&gt;, &lt;span class='wiki-link' data-id='valkyrie'&gt;Valkyrie&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>A fast-firing heavy shell dispenser ideal for chewing through light biological units and soft vehicles.</p>
+<p>Fast-firing heavy shell dispenser ideal for light biological unit and soft vehicle chewing.</p>
 </lore>
 </entry>
 
@@ -1252,7 +1252,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='bulwark'&gt;Bulwark&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>Launches double-guided missiles configured to slice through mechanical armor plating.</p>
+<p>Double-guided missile launch configured for mechanical armor plating slicing.</p>
 </lore>
 </entry>
 
@@ -1268,7 +1268,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='drone'&gt;Aero Drone&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>A rapid suppression gun designed to disintegrate massive biological swarms of light biters.</p>
+<p>Rapid suppression gun designed for massive light biter biological swarm disintegration.</p>
 </lore>
 </entry>
 
@@ -1301,7 +1301,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='chaffron'&gt;Chaffron Warship&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>A massive ordnance launcher deployed to flatten entire base structures and clear thick air formations.</p>
+<p>Massive ordnance launcher deployed for entire base structure flattening and thick air formation clearance.</p>
 </lore>
 </entry>
 
@@ -1317,7 +1317,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='archon'&gt;Archon&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>A high-power energy weapon designed by Enclave scholars to slice cleanly through armor columns.</p>
+<p>High-power energy weapon designed by Enclave scholars for clean armor column slicing.</p>
 </lore>
 </entry>
 
@@ -1333,7 +1333,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='steward'&gt;Steward&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>An energy blade designed for Enclave city guards to defend against close-range biter rushes.</p>
+<p>Energy blade designed for Enclave city guards against close-range biter rush defense.</p>
 </lore>
 </entry>
 
@@ -1349,7 +1349,7 @@ const xmlDatabaseSource = `
 <stat label="Primary Users">&lt;span class='wiki-link' data-id='destroyer'&gt;Destroyer&lt;/span&gt;, &lt;span class='wiki-link' data-id='python'&gt;Python&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>Launches dense plasma spheres that quickly compromise metallic and composite shields.</p>
+<p>Dense plasma sphere launch for rapid metallic and composite shield compromise.</p>
 </lore>
 </entry>
 
@@ -1381,7 +1381,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='speeder'&gt;Speeder&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>Intentionally tuned down against metal structures, but devastatingly effective against swarms of flesh-based targets.</p>
+<p>Intentional metal structure tuning down, with devastating effectiveness against flesh-based target swarms.</p>
 </lore>
 </entry>
 
@@ -1398,7 +1398,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='harpy'&gt;Harpy&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>An advanced Enclave aerial system. The beam ramps up in damage the longer the harpy remains focused on a single target.</p>
+<p>Advanced Enclave aerial system. Beam damage ramping upward with harpy focus duration on single target.</p>
 </lore>
 </entry>
 
@@ -1414,7 +1414,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='dirigible'&gt;Dirigible&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>A massive capital energy system capable of engaging multiple independent targets across heavy combat horizons.</p>
+<p>Massive capital energy system capable of multiple independent target engagement across heavy combat horizons.</p>
 </lore>
 </entry>
 
@@ -1430,7 +1430,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='biter'&gt;Biter&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>The primary biological attack of the basic biter, relying on immense numbers to chew through alloy hulls.</p>
+<p>Basic biter primary biological attack relying on immense numbers for alloy hull chewing.</p>
 </lore>
 </entry>
 
@@ -1447,7 +1447,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='ravenger'&gt;Ravenger&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>Secretes a powerful biological acid (pH 1.2) that rapidly melts down vehicle plating during close combat engagement.</p>
+<p>Powerful biological acid (pH 1.2) secretion for rapid vehicle plating melting during close combat engagement.</p>
 </lore>
 </entry>
 
@@ -1463,7 +1463,7 @@ const xmlDatabaseSource = `
 <stat label="Primary Users">&lt;span class='wiki-link' data-id='feral'&gt;Feral&lt;/span&gt;, &lt;span class='wiki-link' data-id='leech'&gt;Leech&lt;/span&gt;, &lt;span class='wiki-link' data-id='phosphate'&gt;Phosphate&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>A volatile biological defense mechanism where the organism self-destructs to release highly corrosive fluids.</p>
+<p>Volatile biological defense mechanism via organism self-destruction for corrosive fluid release.</p>
 </lore>
 </entry>
 
@@ -1478,7 +1478,7 @@ const xmlDatabaseSource = `
 <stat label="Primary Users">&lt;span class='wiki-link' data-id='annihilator'&gt;Annihilator&lt;/span&gt;, &lt;span class='wiki-link' data-id='nest'&gt;Mobile Nest&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>Heavy bone-based implements designed to tear apart metal structures and physical infantry.</p>
+<p>Heavy bone-based implements designed for metal structure and physical infantry tearing.</p>
 </lore>
 </entry>
 
@@ -1494,7 +1494,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='spitter'&gt;Spitter&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>Standard ranged attack of the Biomass, launching corrosive fluid from distance.</p>
+<p>Standard Biomass ranged attack launching corrosive fluid from distance.</p>
 </lore>
 </entry>
 
@@ -1510,7 +1510,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='gagger'&gt;Gagger&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>A powerful close-range spray. The weapon is highly effective but produces a distinctive loud sound.</p>
+<p>Powerful close-range spray. High weapon effectiveness accompanied by distinctive loud sound.</p>
 </lore>
 </entry>
 
@@ -1526,7 +1526,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='ranger'&gt;Ranger&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>Unleashes bone spikes coated in deep-dissolving chemicals designed specifically to neutralize tanks.</p>
+<p>Bone spike unleashing coated in deep-dissolving chemicals for tank neutralization.</p>
 </lore>
 </entry>
 
@@ -1542,7 +1542,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='titan'&gt;Titan&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>A devastating kinetic stomp that ignores heavy metal armoring grids entirely.</p>
+<p>Devastating kinetic stomp ignoring heavy metal armoring grids entirely.</p>
 </lore>
 </entry>
 
@@ -1558,7 +1558,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='stalker'&gt;Stalker&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>Fires localized bio-needles to puncture mechanical pipelines and harass workers.</p>
+<p>Localized bio-needle firing for mechanical pipeline puncture and worker harassment.</p>
 </lore>
 </entry>
 
@@ -1574,7 +1574,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='vulture'&gt;Vulture&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>Primal lances grown inside lung chambers, fired to enforce complete aerial dominance.</p>
+<p>Primal lances grown inside lung chambers, fired for complete aerial dominance enforcement.</p>
 </lore>
 </entry>
 
@@ -1590,7 +1590,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='carrion'&gt;Carrion&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>Extended muscular lashes designed to pull enemy infantry directly into the maw.</p>
+<p>Extended muscular lashes for enemy infantry direct pulling into maw.</p>
 </lore>
 </entry>
 
@@ -1606,7 +1606,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='vomiter'&gt;Vomiter&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>Coats choke barriers in persistent acidic mist that melts infantry columns over time.</p>
+<p>Choke barrier coating in persistent acidic mist melting infantry columns over time.</p>
 </lore>
 </entry>
 
@@ -1622,7 +1622,7 @@ const xmlDatabaseSource = `
 <stat label="Primary User">&lt;span class='wiki-link' data-id='husk'&gt;Husk&lt;/span&gt;</stat>
 </stats>
 <lore>
-<p>Fires heavy, calcified explosive pods to crack human bases from exceptional distances.</p>
+<p>Heavy, calcified explosive pod firing for human base cracking from exceptional distances.</p>
 </lore>
 </entry>
 
@@ -1639,8 +1639,8 @@ const xmlDatabaseSource = `
 <stat label="Workability">Cannot be machined or hammered; can only be cast</stat>
 </stats>
 <lore>
-<p>Caspium kinetic-reacts, converting ~20,000 joules per bullet into nearly 4,000°C thermal spikes. Consequently, vehicles in combat literally melt on-screen during combat.</p>
-<p>Because it is impossible to grind down or drill without kinetic feedback, raw sheets are razor-sharp and hazardous to handle.</p>
+<p>Caspium kinetic reaction, converting ~20,000 joules per bullet into nearly 4,000°C thermal spikes. Resulting literal vehicle on-screen melting in combat.</p>
+<p>Impossibility of grinding or drilling down without kinetic feedback; raw sheets razor-sharp and hazardous for handling.</p>
 </lore>
 <extra>Technical File: Hitting Caspium with an active lathe or steel hammer can trigger a sudden thermal flash. To shield occupants, plates must be encased in nonconductive &lt;span class='wiki-link' data-id='steeline'&gt;Steeline&lt;/span&gt; cooling channels.</extra>
 </entry>
@@ -1657,8 +1657,8 @@ const xmlDatabaseSource = `
 <stat label="Conductivity">100% Nonconductive</stat>
 </stats>
 <lore>
-<p>A highly valuable, heavy alloy made of steel, tungsten, and trace elements, used primarily to build space superstructures like the Star Forge.</p>
-<p>Because of its thermal resilience, it is wrapped around Caspium plates, allowing them to absorb bullets and safely cool down without cooking the vehicle pilot.</p>
+<p>Highly valuable heavy alloy composed of steel, tungsten, and trace elements, primarily for space superstructure construction (e.g., Star Forge).</p>
+<p>Thermal resilience wrapping around Caspium plates for bullet absorption and safe cooling without vehicle pilot cooking.</p>
 </lore>
 </entry>
 
@@ -1675,8 +1675,8 @@ const xmlDatabaseSource = `
 <stat label="System Goal">Prevent biological mutation during stasis</stat>
 </stats>
 <lore>
-<p>The stabilizers used by the Syndicates during their long journey to the Proxima system.</p>
-<p>Because the system is powered entirely by metabolic body heat, any genetic error or system collapse causes power distribution to stutter, leading to erratic physical spasms.</p>
+<p>Stabilizers used by Syndicates during long journey to Proxima system.</p>
+<p>Power source entirely from metabolic body heat; genetic error or system collapse causing power distribution stuttering, leading to erratic physical spasms.</p>
 </lore>
 </entry>
 
@@ -1693,7 +1693,7 @@ const xmlDatabaseSource = `
 <stat label="Key Inventions">Screening Trucks, BMO Officers' Armor</stat>
 </stats>
 <lore>
-<p>The Biomass Management Organisation (BMO) was established to isolate infected zones on Earth. They monitored the disease's 7-stage progression but were entirely overrun during the main containment breach. BMO exo-suits utilize a backpack lithium-ion power bank with pneumatic emergency pack-ejection mechanisms.</p>
+<p>Biomass Management Organisation (BMO) established for infected zone isolation on Earth. Disease 7-stage progression monitoring with complete overrun during main containment breach. BMO exo-suit backpack lithium-ion power bank utilization with pneumatic emergency pack-ejection mechanisms.</p>
 </lore>
 </entry>
 
@@ -1708,7 +1708,7 @@ const xmlDatabaseSource = `
 <stat label="Vessels Constructed">Regolith, Aethon, TSC, Praeus, Alabama</stat>
 </stats>
 <lore>
-<p>Charcoal Military manufactured the massive exploratory warships that transported the frozen human refugees. Due to resource limits, these vessels carried basic infantry armor and Valkyrie fighters.</p>
+<p>Charcoal Military manufacture of massive exploratory warships transporting frozen human refugees. Resource limits resulting in basic infantry armor and Valkyrie fighter carriage.</p>
 </lore>
 </entry>
 
@@ -1723,7 +1723,7 @@ const xmlDatabaseSource = `
 <stat label="Iconic Designs">Chaffron warship lift engines</stat>
 </stats>
 <lore>
-<p>Designed the high-thrust engine templates used across all human spacecraft, specializing in heavy VTOL systems for cargo lifting.</p>
+<p>High-thrust engine template design used across all human spacecraft, specializing in heavy VTOL systems for cargo lifting.</p>
 </lore>
 </entry>
 
@@ -1738,7 +1738,7 @@ const xmlDatabaseSource = `
 <stat label="Legacy Impact">Gave the 'Syndicate' faction their name</stat>
 </stats>
 <lore>
-<p>Syncon Inc designed the cryo-chambers and metabolic heat-powered stabilizers that kept the refugees safe during their 20,000-year voyage.</p>
+<p>Syncon Inc design of cryo-chambers and metabolic heat-powered stabilizers keeping refugees safe during 20,000-year voyage.</p>
 </lore>
 </entry>
 
@@ -1753,7 +1753,7 @@ const xmlDatabaseSource = `
 <stat label="Signature Weapons">CD-12 Assault Rifle, CD-13 Rifle</stat>
 </stats>
 <lore>
-<p>Alaby Inc focused on designing highly durable infantry weaponry with thick steel casings to survive heavy industrial labor and frontline mining clashes.</p>
+<p>Alaby Inc focus on highly durable infantry weaponry design with thick steel casings for heavy industrial labor and frontline mining clash survival.</p>
 </lore>
 </entry>
 
@@ -1770,8 +1770,8 @@ const xmlDatabaseSource = `
 <stat label="Strategic Cap">Caps performance after 20 minutes; must push early</stat>
 </stats>
 <lore>
-<p>The Syndicates use standard low-voltage 500V 30A AC electrical sockets across all base facilities. Because their mining drills still rely on exposed electronic components, striking a Syndicate drill with an EMP temporarily shuts down resource extraction for 8 seconds.</p>
-<p>Due to a limited structural understanding of Caspium, Syndicate late-game armor caps out early, forcing Syndicate players to win through swift early-to-mid game aggression.</p>
+<p>Syndicate use of standard low-voltage 500V 30A AC electrical sockets across all base facilities. Mining drill reliance on exposed electronic components resulting in 8-second resource extraction shutdown upon EMP strike.</p>
+<p>Caspium structural understanding limitations causing early Syndicate late-game armor capping, forcing swift early-to-mid game aggression strategy.</p>
 </lore>
 </entry>
 
@@ -1787,8 +1787,8 @@ const xmlDatabaseSource = `
 <stat label="Quarry Weakness">Takes 3x damage from thermal/fire weapons</stat>
 </stats>
 <lore>
-<p>Biomass structures rely on grey exudate creep trails to function and build. This creep is extremely flammable; if set alight without secretion nodes using Caspium to extinguish the fire, entire colonies can incinerate. Biomass quarries also take 3x extra damage from thermal attacks.</p>
-<p>Biomass players can switch strains (Standard Kinetic, Acid vs Light, Primal vs Heavy) at any time for 200 Caspium. Lore-wise, Biomass metabolizes Caspium from destroyed vehicles into armor, though this is excluded from active match mechanics.</p>
+<p>Biomass structure reliance on grey exudate creep trails for function and building. Extreme creep flammability; ignition without Caspium secretion nodes leading to entire colony incineration. Biomass quarry 3x extra damage intake from thermal attacks.</p>
+<p>Biomass player strain switching (Standard Kinetic, Acid vs Light, Primal vs Heavy) at any time for 200 Caspium. Lore-wise, Biomass Caspium metabolism from destroyed vehicles into armor (excluded from active match mechanics).</p>
 </lore>
 </entry>
 
@@ -1804,8 +1804,8 @@ const xmlDatabaseSource = `
 <stat label="Construction Rule">Defenses cannot build while nearby structures take damage or attack</stat>
 </stats>
 <lore>
-<p>Enclave defensive structures build rapidly using only Stone, but cannot function without Caspium-fueled power generators or Beam Towers. Base expansion is constrained because defenses cannot be constructed anywhere near active combat or damaged structures.</p>
-<p>All core combat units and structures require Caspium, forcing the Enclave to play conservatively and save for an unstoppable late-game push.</p>
+<p>Rapid Enclave defensive structure building using Stone exclusively, with functional requirement of Caspium-fueled power generators or Beam Towers. Base expansion constraint due to defense construction prohibition near active combat or damaged structures.</p>
+<p>Core combat unit and structure Caspium requirement forcing Enclave conservative play and late-game push saving.</p>
 </lore>
 </entry>
 
@@ -1822,7 +1822,7 @@ const xmlDatabaseSource = `
 <stat label="Central Deposits">10,000 Metal / 8,000 Oil / 1,000-5,000 Caspium</stat>
 </stats>
 <lore>
-<p>Every standard competitive map in Proxima must strictly adhere to this layout template. Because the Enclave is entirely dependent on Caspium for combat structures, deviating from these exact resource node ratios renders the faction unplayable.</p>
+<p>Strict layout template adherence required for every standard competitive map in Proxima. Enclave Caspium combat structure dependency rendering faction unplayable upon exact resource node ratio deviation.</p>
 </lore>
 </entry>
 
@@ -1840,9 +1840,9 @@ const xmlDatabaseSource = `
 <stat label="Casualties">99% of regional population inside 30s</stat>
 </stats>
 <lore>
-<p>The Star Forge was a massive Steeline truss-structured Dyson sphere surrounding Caspius XII to cast Caspium. When the power-mad Ravenous attacked the outer control centers, the arriving Enclave warfleet overwhelmed them.</p>
-<p>Faced with complete defeat, the Ravenous detonated the skeletal structural ligaments. Torsion forces pulled half of the Dyson Sphere into the star, compromising its internal nuclear fusion.</p>
-<p>0.000083 seconds after impact, 99% of onboard survivors were dead. In 30 seconds, the star compressed into an asteroid-sized core before triggering a massive supernova that melted the fleeing Enclave fleet into Caspium-rich asteroid belts around white dwarf Caspius XII-d.</p>
+<p>Star Forge as massive Steeline truss-structured Dyson sphere surrounding Caspius XII for Caspium casting. Power-mad Ravenous attack on outer control centers; Enclave warfleet arrival and overwhelming.</p>
+<p>Ravenous detonation of skeletal structural ligaments upon complete defeat. Torsion force half-Dyson Sphere pulling into star, internal nuclear fusion compromise.</p>
+<p>0.000083 seconds post-impact: 99% onboard survivor mortality. 30-second star compression into asteroid-sized core followed by massive supernova triggering fleeing Enclave fleet melting into Caspium-rich asteroid belts around white dwarf Caspius XII-d.</p>
 </lore>
 </entry>
 
@@ -1859,9 +1859,9 @@ const xmlDatabaseSource = `
 <stat label="Cryo-Voyage Length">20,000 Earth Years</stat>
 </stats>
 <lore>
-<p>The Biomass disease began on Earth via infected meat, rapidly bypassing the human blood-brain barrier by infecting filter cells. It progresses through 7 distinct stages: initial high fever (Stage 1), deceptive temporary recovery (Stage 2), rapid immune cell death (Stage 3), blood-brain barrier dissolution and 3-day cognitive decline (Stage 4), brain death with synthetic nervous network formation (Stage 5), motor skill recovery as a new species (Stage 6), and fully developed hostile swarm behavior in 3-8 weeks (Stage 7).</p>
-<p>To save humanity, a fleet of demilitarized training vessels was launched. Passengers were frozen inside cryo-pods equipped with &lt;span class='wiki-link' data-id='dna-stabilizer'&gt;DNA Stabilizers&lt;/span&gt; to develop resistance over thousands of years.</p>
-<p>The drift immunized the survivors, but transformed them into asymptomatic carriers whose colliding genetic immunities occasionally produce vulnerable offspring.</p>
+<p>Biomass disease inception on Earth via infected meat, rapidly bypassing human blood-brain barrier via filter cell infection. 7-stage progression: initial high fever (Stage 1), deceptive temporary recovery (Stage 2), rapid immune cell death (Stage 3), blood-brain barrier dissolution and 3-day cognitive decline (Stage 4), brain death with synthetic nervous network formation (Stage 5), motor skill recovery as new species (Stage 6), fully developed hostile swarm behavior in 3-8 weeks (Stage 7).</p>
+<p>Demilitarized training vessel fleet launch for humanity preservation. Passenger freezing in cryo-pods equipped with &lt;span class='wiki-link' data-id='dna-stabilizer'&gt;DNA Stabilizers&lt;/span&gt; for millenary resistance development.</p>
+<p>Drift survivor immunization accompanied by transformation into asymptomatic carriers whose colliding genetic immunities occasionally produce vulnerable offspring.</p>
 </lore>
 </entry>
 
@@ -1878,8 +1878,8 @@ const xmlDatabaseSource = `
 <stat label="Outcome">Escape rocket destroyed over launch pad</stat>
 </stats>
 <lore>
-<p>During the collapse on Earth, Tanner rescued his 'colleague' Jeffery, who was secretly a flesh-puppet guided by the merged mind of &lt;span class='wiki-link' data-id='stafford'&gt;Dr. Glenn Stafford&lt;/span&gt;.</p>
-<p>Stafford attempted to hijack a Proxima-bound colonial rocket to seed other systems. Tanner boarded the craft during launch and successfully detonated it, sacrificing his life to save humanity.</p>
+<p>Collapse on Earth: Tanner rescue of 'colleague' Jeffery (secret flesh-puppet guided by merged mind of &lt;span class='wiki-link' data-id='stafford'&gt;Dr. Glenn Stafford&lt;/span&gt;).</p>
+<p>Stafford Proxima-bound colonial rocket hijacking attempt for other system seeding. Tanner craft boarding during launch and successful detonation, sacrificing life for humanity preservation.</p>
 </lore>
 </entry>
 
@@ -1896,9 +1896,9 @@ const xmlDatabaseSource = `
 <stat label="Result">Station pulled into orbit, completely vaporized</stat>
 </stats>
 <lore>
-<p>Torus VI was the hyper-industrial capital of the Derrulicants. During the final stage of the war, the rotating station was completely overrun by the Biomass swarm.</p>
-<p>To prevent absolute contamination, the Syndicate and Enclave launched a massive joint strike to unlock three heavily-guarded magnetic locks anchored across separate planets.</p>
-<p>Shifting the magnetic locks dragged the colossal space station out of orbit, crashing it directly into a planet below to completely incinerate the biological hosts.</p>
+<p>Torus VI as hyper-industrial Derrulicant capital. Complete station overrun by Biomass swarm during final war stage.</p>
+<p>Syndicate and Enclave massive joint strike launch for three heavily-guarded magnetic locks anchored across separate planets to prevent absolute contamination.</p>
+<p>Magnetic lock shift dragging colossal space station out of orbit, crashing directly into planet below for complete biological host incineration.</p>
 </lore>
 </entry>
 
@@ -1915,8 +1915,8 @@ const xmlDatabaseSource = `
 <stat label="Historical Outcome">Bran Davis promoted to command</stat>
 </stats>
 <lore>
-<p>The opening engagement of the Proxima War. Derrulicant forces launched a surprise raid on Bran Davis's civilian mining platform.</p>
-<p>Bran successfully fled the platform in his custom &lt;span class='wiki-link' data-id='suv'&gt;SUV&lt;/span&gt;. He was picked up by an Enclave warship, eventually receiving command after the ship's captain died of the carrier virus.</p>
+<p>Opening Proxima War engagement. Derrulicant force surprise raid on Bran Davis's civilian mining platform.</p>
+<p>Platform escape by Bran in custom &lt;span class='wiki-link' data-id='suv'&gt;SUV&lt;/span&gt;. Enclave warship pickup, subsequent command receipt following carrier virus ship captain death.</p>
 </lore>
 </entry>
 
@@ -1932,8 +1932,8 @@ const xmlDatabaseSource = `
 <stat label="Syndicate Commander">Bran Davis</stat>
 </stats>
 <lore>
-<p>Syndicate dropships discovered that the Derrulicants were attempting to construct a secret, secondary Star Forge on Startis.</p>
-<p>Bran Davis coordinated a heavy dropship campaign, successfully raiding and leveling the factory complex to preserve the balance of system resources.</p>
+<p>Syndicate dropship discovery of Derrulicant secret secondary Star Forge construction attempt on Startis.</p>
+<p>Bran Davis heavy dropship campaign coordination, successful factory complex raid and leveling for system resource balance preservation.</p>
 </lore>
 </entry>
 
@@ -1949,8 +1949,8 @@ const xmlDatabaseSource = `
 <stat label="Objective">Secure 10,000 Caspium pipeline units</stat>
 </stats>
 <lore>
-<p>While scavenging an abandoned Derrulicant mining yard, Bran's miners inadvertently disturbed an Enclave Caspium graveyard.</p>
-<p>The religious Purist subfaction immediately attacked, forcing Bran's infantry to establish a desperate bunker line to defend the pipeline.</p>
+<p>Abandoned Derrulicant mining yard scavenging: inadvertent disturbance of Enclave Caspium graveyard by Bran's miners.</p>
+<p>Religious Purist subfaction immediate attack, forcing Bran's infantry into desperate bunker line establishment for pipeline defense.</p>
 </lore>
 </entry>
 
@@ -1966,8 +1966,8 @@ const xmlDatabaseSource = `
 <stat label="Outcome">Syndicates abandoned to swarm</stat>
 </stats>
 <lore>
-<p>During a joint offensive against a major Biomass hive cluster, King Prius abruptly ordered all Enclave support forces to retreat to orbit, leaving the Syndicates stranded.</p>
-<p>Bran's crew barely escaped by hijacking orbital transports, completely ending the human-Enclave alliance.</p>
+<p>Joint offensive against major Biomass hive cluster: abrupt Enclave King Prius order for all Enclave support forces retreat to orbit, leaving Syndicates stranded.</p>
+<p>Bran's crew narrow escape via orbital transport hijacking, human-Enclave alliance complete termination.</p>
 </lore>
 </entry>
 
@@ -1983,8 +1983,8 @@ const xmlDatabaseSource = `
 <stat label="Execution Method">Automated Caspium Ceiling Crystal</stat>
 </stats>
 <lore>
-<p>Guided by the words of the dead Elder, Bran Davis snuck into Prius's secure meeting chambers to execute him.</p>
-<p>He located Prius conversing with hologram feeds. Right as Bran drew his &lt;span class='wiki-link' data-id='cd-13-rifle'&gt;CD-13 rifle&lt;/span&gt;, Prius paid him no attention; the automated security crystal in the ceiling instantly vaporized Bran.</p>
+<p>Guidance from dead Elder's words: Bran Davis sneaking into Prius's secure meeting chambers for execution.</p>
+<p>Location of Prius conversing with hologram feeds. Drawing of &lt;span class='wiki-link' data-id='cd-13-rifle'&gt;CD-13 rifle&lt;/span&gt; by Bran; Prius attention absence; ceiling automated security crystal instant Bran vaporization.</p>
 </lore>
 </entry>
 </database>
